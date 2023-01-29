@@ -27,10 +27,23 @@ export default function Home() {
         </nav>
       </header>
 
-      <main className="h-screen bg-slate-100">
-        <h1 className="text-3xl font-bold underline">
-          Hi, my name is Antony Merle. I build places and apps for today's web.
+      <main
+        id="welcome"
+        className=" h-screen container mx-auto bg-slate-800  text-slate-300"
+      >
+        <h1 className="flex flex-col text-center text-6xl font-bold md:text-left">
+          <span className="text-sm text-mint">Hi, my name is </span>Antony
+          Merle.
+          <span>I build apps for today's Internet.</span>
         </h1>
+        <p>
+          Full Stack Web Developer with a passion for crafting intuitive and
+          user-friendly web experiences. Skilled in HTML, CSS, JavaScript,
+          React, and Node.js. Adept at developing responsive and dynamic
+          websites that engage visitors and meet business requirements. With 3
+          years of experience and a focus on continual learning, I am committed
+          to delivering high-quality and innovative solutions."
+        </p>
       </main>
       <section id="about">
         I work with javascript, nodejs and typescript. I also love Go and C#.
