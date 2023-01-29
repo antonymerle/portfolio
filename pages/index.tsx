@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <header className="relative container mx-auto p-6 ">
         <nav className="flex items-center justify-between">
-          <img src="logo.jpg" alt="logo" className="" />
+          <img src="logo.jpg" alt="logo" className="h-[80px] w-[8 0px]" />
           {/* Menu items */}
           <ol className="hidden md:flex justify-between items-center space-x-6 text-mint  ">
             <li>About</li>
@@ -29,21 +29,23 @@ export default function Home() {
 
       <main
         id="welcome"
-        className=" h-screen container mx-auto bg-slate-800  text-slate-300"
+        className="flex flex-col justify-start space-y-4 h-screen px-6  bg-slate-800 text-center text-slate-300  md:px-64 md:text-left"
       >
-        <h1 className="flex flex-col text-center text-6xl font-bold md:text-left">
-          <span className="text-sm text-mint">Hi, my name is </span>Antony
-          Merle.
-          <span>I build apps for today's Internet.</span>
-        </h1>
-        <p>
-          Full Stack Web Developer with a passion for crafting intuitive and
-          user-friendly web experiences. Skilled in HTML, CSS, JavaScript,
-          React, and Node.js. Adept at developing responsive and dynamic
-          websites that engage visitors and meet business requirements. With 3
-          years of experience and a focus on continual learning, I am committed
-          to delivering high-quality and innovative solutions."
-        </p>
+        <div className="flex flex-col justify-start space-y-4 container mx-auto">
+          <h1 className="flex flex-col mt-28 space-y-4  text-xl font-bold  md:text-6xl">
+            <span className="text-sm text-mint">Hi, my name is </span>
+            <span className="text-slate-50">Antony Merle.</span>
+            <span>I build apps for today's Internet.</span>
+          </h1>
+          <p>
+            Full Stack Web Developer with a passion for crafting intuitive and
+            user-friendly web experiences. My main focus is developing
+            responsive and dynamic websites that engage visitors and meet
+            business requirements. With 3 years of experience and a focus on
+            continual learning, I am committed to delivering high-quality and
+            innovative solutions.
+          </p>
+        </div>
       </main>
       <section id="about">
         I work with javascript, nodejs and typescript. I also love Go and C#.
