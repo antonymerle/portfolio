@@ -27,9 +27,9 @@ export default function Home() {
         </nav>
       </header>
 
-      <main
+      <section
         id="welcome"
-        className="flex flex-col justify-start space-y-4 h-screen px-6  bg-slate-800 text-center text-slate-300  md:px-64 md:text-left"
+        className="h-screen flex flex-col justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300  md:px-64 md:text-left"
       >
         <div className="flex flex-col justify-start space-y-4 container mx-auto">
           <h1 className="flex flex-col mt-28 space-y-4  text-xl font-bold  md:text-6xl">
@@ -46,9 +46,29 @@ export default function Home() {
             innovative solutions.
           </p>
         </div>
-      </main>
-      <section id="about">
-        I work with javascript, nodejs and typescript. I also love Go and C#.
+      </section>
+
+      <section
+        id="about"
+        className="flex flex-col h-screen bg-slate-50 text-slate-800 md:flex-row md:px-72 md:text-left md:justify-start"
+      >
+        <div className="flex flex-col  justify-start space-y-4 container md:items-start md:w-2/3">
+          <h2 className="flex justify-center items-baseline space-x-2 mt-28 space-y-4  text-xl font-bold  md:text-4xl ">
+            <span className="text-lg text-mint">01.</span>
+            <span>About me</span>
+          </h2>
+          <p>
+            I work with javascript, nodejs and typescript. I also love Go and
+            C#.
+          </p>
+        </div>
+
+        {/*     /bg-[url('../public/antony-merle.jpg')] */}
+        <div className="grid container">
+          <div className="z-20 relative  object-cover h-[250px] w-[250px] bg-slate-300 ">
+            <div className="z-10 absolute h-[250px] w-[250px] border-solid border-2 border-slate-600  ml-[30px] mt-[30px]"></div>
+          </div>
+        </div>
       </section>
       <section id="projects">
         Here are a few of the projects I worked on lately.
