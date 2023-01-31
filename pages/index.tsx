@@ -57,17 +57,13 @@ export default function Home() {
             <span className="text-lg text-mint">01.</span>
             <span>About me</span>
           </h2>
-          <p>
-            I work with javascript, nodejs and typescript. I also love Go and
-            C#.
-          </p>
+          <p>I work with javascript, nodejs and typescript.</p>
         </div>
 
         {/*     /bg-[url('../public/antony-merle.jpg')] */}
-        <div className="grid container">
-          <div className="z-20 relative  object-cover h-[250px] w-[250px] bg-slate-300 ">
-            <div className="z-10 absolute h-[250px] w-[250px] border-solid border-2 border-slate-600  ml-[30px] mt-[30px]"></div>
-          </div>
+        <div className="block relative">
+          <div className="z-10 block absolute object-cover h-[250px] w-[250px] bg-slate-300 "></div>
+          <div className="z-0 block absolute top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2 border-slate-600 "></div>
         </div>
       </section>
       <section id="projects">
