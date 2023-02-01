@@ -50,13 +50,13 @@ export default function Home() {
 
         <section
           id="about"
-          className="flex flex-col w-full h-screen bg-slate-500 items-center justify-start text-slate-800 md:flex-row md:px-72 md:text-left md:justify-start"
+          className="flex flex-col w-full h-screen bg-slate-500 items-center justify-start text-slate-800 md:flex-row"
         >
           <div
             id="about-text"
-            className="flex w-full flex-col items-center justify-start space-y-4 container md:items-start md:w-2/3"
+            className="flex flex-col items-center justify-start space-y-4 md:basis-7/12 md:flex-col md:items-end"
           >
-            <h2 className="flex justify-center items-baseline space-x-2 mt-28 space-y-4  text-xl font-bold  md:text-4xl ">
+            <h2 className="flex flex-row justify-center items-baseline space-x-2 mt-28 space-y-4  text-xl font-bold  md:text-4xl ">
               <span className="text-lg text-mint">01.</span>
               <span>About me</span>
             </h2>
@@ -65,8 +65,8 @@ export default function Home() {
 
           {/*     /bg-[url('../public/antony-merle.jpg')] */}
           {/* bloc image */}
-          <div className="flex flex-col justify-start  h-full w-full   bg-slate-50">
-            <div id="about-picture" className="block w-full relative">
+          <div className="flex h-full flex-col items-start justify-center space-y-4 container bg-slate-50 md:md:basis-5/12">
+            <div id="about-picture" className="relative">
               <div className="z-10 block absolute object-cover h-[250px] w-[250px] bg-slate-300 ">
                 <img src="antony-merle.jpg"></img>
               </div>
