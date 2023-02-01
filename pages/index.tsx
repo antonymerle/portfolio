@@ -26,51 +26,60 @@ export default function Home() {
           </ol>
         </nav>
       </header>
+      <main className="w-full">
+        <section
+          id="welcome"
+          className="h-screen flex flex-col justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300  md:px-64 md:text-left"
+        >
+          <div className="flex flex-col justify-start space-y-4 container mx-auto">
+            <h1 className="flex flex-col mt-28 space-y-4  text-xl font-bold  md:text-6xl">
+              <span className="text-sm text-mint">Hi, my name is </span>
+              <span className="text-slate-50">Antony Merle.</span>
+              <span>I build apps for today's Internet.</span>
+            </h1>
+            <p>
+              Full Stack Web Developer with a passion for crafting intuitive and
+              user-friendly web experiences. My main focus is developing
+              responsive and dynamic websites that engage visitors and meet
+              business requirements. With 3 years of experience and a focus on
+              continual learning, I am committed to delivering high-quality and
+              innovative solutions.
+            </p>
+          </div>
+        </section>
 
-      <section
-        id="welcome"
-        className="h-screen flex flex-col justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300  md:px-64 md:text-left"
-      >
-        <div className="flex flex-col justify-start space-y-4 container mx-auto">
-          <h1 className="flex flex-col mt-28 space-y-4  text-xl font-bold  md:text-6xl">
-            <span className="text-sm text-mint">Hi, my name is </span>
-            <span className="text-slate-50">Antony Merle.</span>
-            <span>I build apps for today's Internet.</span>
-          </h1>
-          <p>
-            Full Stack Web Developer with a passion for crafting intuitive and
-            user-friendly web experiences. My main focus is developing
-            responsive and dynamic websites that engage visitors and meet
-            business requirements. With 3 years of experience and a focus on
-            continual learning, I am committed to delivering high-quality and
-            innovative solutions.
-          </p>
-        </div>
-      </section>
+        <section
+          id="about"
+          className="flex flex-col w-full h-screen bg-slate-500 items-center justify-start text-slate-800 md:flex-row md:px-72 md:text-left md:justify-start"
+        >
+          <div
+            id="about-text"
+            className="flex w-full flex-col items-center justify-start space-y-4 container md:items-start md:w-2/3"
+          >
+            <h2 className="flex justify-center items-baseline space-x-2 mt-28 space-y-4  text-xl font-bold  md:text-4xl ">
+              <span className="text-lg text-mint">01.</span>
+              <span>About me</span>
+            </h2>
+            <p>I work with javascript, nodejs and typescript.</p>
+          </div>
 
-      <section
-        id="about"
-        className="flex flex-col h-screen bg-slate-50 text-slate-800 md:flex-row md:px-72 md:text-left md:justify-start"
-      >
-        <div className="flex flex-col  justify-start space-y-4 container md:items-start md:w-2/3">
-          <h2 className="flex justify-center items-baseline space-x-2 mt-28 space-y-4  text-xl font-bold  md:text-4xl ">
-            <span className="text-lg text-mint">01.</span>
-            <span>About me</span>
-          </h2>
-          <p>I work with javascript, nodejs and typescript.</p>
-        </div>
-
-        {/*     /bg-[url('../public/antony-merle.jpg')] */}
-        <div className="block relative">
-          <div className="z-10 block absolute object-cover h-[250px] w-[250px] bg-slate-300 "></div>
-          <div className="z-0 block absolute top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2 border-slate-600 "></div>
-        </div>
-      </section>
-      <section id="projects">
-        Here are a few of the projects I worked on lately.
-      </section>
-      <section id="contact">Let's talk.</section>
-
+          {/*     /bg-[url('../public/antony-merle.jpg')] */}
+          {/* bloc image */}
+          <div className="flex flex-col justify-start  h-full w-full   bg-slate-50">
+            <div id="about-picture" className="block w-full relative">
+              <div className="z-10 block absolute object-cover h-[250px] w-[250px] bg-slate-300 ">
+                <img src="antony-merle.jpg"></img>
+              </div>
+              <div className="z-0 block absolute top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2 border-slate-600 "></div>
+            </div>
+          </div>
+          {/* bloc image */}
+        </section>
+        <section id="projects">
+          Here are a few of the projects I worked on lately.
+        </section>
+        <section id="contact">Let's talk.</section>
+      </main>
       <footer>Antony Merle, {new Date().getFullYear()}</footer>
     </div>
   );
