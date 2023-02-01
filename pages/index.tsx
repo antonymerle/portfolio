@@ -26,10 +26,10 @@ export default function Home() {
           </ol>
         </nav>
       </header>
-      <main className="w-full">
+      <main className="flex flex-col items-center justify-center w-full">
         <section
           id="welcome"
-          className="h-screen flex flex-col justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300  md:px-64 md:text-left"
+          className="h-screen flex flex-col justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300  md:px-24 md:text-left lg:px-64"
         >
           <div className="flex flex-col justify-start space-y-4 container mx-auto">
             <h1 className="flex flex-col mt-28 space-y-4  text-xl font-bold  md:text-6xl">
@@ -50,30 +50,47 @@ export default function Home() {
 
         <section
           id="about"
-          className="flex flex-col w-full h-screen bg-slate-50 items-center justify-start text-slate-800 md:flex-row md:items-center"
+          className="flex flex-col w-full h-screen  bg-slate-50"
         >
           <div
-            id="about-text"
-            className="flex flex-col items-center justify-start space-y-4 md:basis-6/12 md:flex-col md:items-end md:p-8"
+            id="about-container"
+            className="block h-screen max-w-[900px] mx-auto bg-slate-100  "
           >
-            <h2 className="flex flex-row justify-center items-baseline space-x-2 mt-28 space-y-4  text-xl font-bold  md:text-4xl ">
-              <span className="text-lg text-mint">01.</span>
-              <span>About me</span>
-            </h2>
-            <p>I work with javascript, nodejs and typescript.</p>
-          </div>
+            <div
+              id="about-header"
+              className="w-full flex flex-row justify-start items-center"
+            >
+              <h2 className="space-x-2 py-6 text-xl font-bold  md:text-4xl">
+                <span className="text-lg text-mint">01.</span>
+                <span>About me</span>
+              </h2>
+            </div>
 
-          {/*     /bg-[url('../public/antony-merle.jpg')] */}
-          {/* bloc image */}
-          <div className="flex h-full flex-col items-start justify-center space-y-4 container md:flex-row md:justify-start md:items-center md:basis-6/12">
-            <div id="about-picture" className="relative">
-              <div className="z-10 block absolute object-cover h-[250px] w-[250px] bg-slate-300 ">
-                <img src="antony-merle.jpg"></img>
+            <div id="about-inner" className="md:grid gap-4 grid-cols-2">
+              <div
+                id="about-text"
+                className="flex flex-col items-center justify-start space-y-4 "
+              >
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis obcaecati ratione eum cum porro dicta soluta
+                  iusto possimus cumque ullam esse, laboriosam, aliquam maxime
+                  repudiandae doloremque ad magni. Impedit, molestias.
+                </p>
               </div>
-              <div className="z-0 block absolute top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2 border-slate-800"></div>
+              {/*     /bg-[url('../public/antony-merle.jpg')] */}
+              {/* bloc image */}
+              <div className="block container mx-auto md:flex-row md:justify-start md:items-center ">
+                <div id="about-picture" className="relative">
+                  <div className="z-10 block absolute object-cover h-[250px] w-[250px] bg-slate-300 ">
+                    <img src="antony-merle.jpg"></img>
+                  </div>
+                  <div className="z-0 block absolute top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2  border-slate-800"></div>
+                </div>
+              </div>
+              {/* bloc image */}
             </div>
           </div>
-          {/* bloc image */}
         </section>
         <section id="projects">
           Here are a few of the projects I worked on lately.
