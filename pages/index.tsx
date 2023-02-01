@@ -50,11 +50,11 @@ export default function Home() {
 
         <section
           id="about"
-          className="flex flex-col w-full h-screen bg-slate-500 items-center justify-start text-slate-800 md:flex-row"
+          className="flex flex-col w-full h-screen bg-slate-50 items-center justify-start text-slate-800 md:flex-row md:items-center"
         >
           <div
             id="about-text"
-            className="flex flex-col items-center justify-start space-y-4 md:basis-7/12 md:flex-col md:items-end"
+            className="flex flex-col items-center justify-start space-y-4 md:basis-6/12 md:flex-col md:items-end md:p-8"
           >
             <h2 className="flex flex-row justify-center items-baseline space-x-2 mt-28 space-y-4  text-xl font-bold  md:text-4xl ">
               <span className="text-lg text-mint">01.</span>
@@ -65,12 +65,12 @@ export default function Home() {
 
           {/*     /bg-[url('../public/antony-merle.jpg')] */}
           {/* bloc image */}
-          <div className="flex h-full flex-col items-start justify-center space-y-4 container bg-slate-50 md:md:basis-5/12">
+          <div className="flex h-full flex-col items-start justify-center space-y-4 container md:flex-row md:justify-start md:items-center md:basis-6/12">
             <div id="about-picture" className="relative">
               <div className="z-10 block absolute object-cover h-[250px] w-[250px] bg-slate-300 ">
                 <img src="antony-merle.jpg"></img>
               </div>
-              <div className="z-0 block absolute top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2 border-slate-600 "></div>
+              <div className="z-0 block absolute top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2 border-slate-800"></div>
             </div>
           </div>
           {/* bloc image */}
