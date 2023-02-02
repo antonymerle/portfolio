@@ -48,17 +48,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="about"
-          className="flex flex-col w-full h-screen  bg-slate-50"
-        >
+        <section id="about" className="w-full h-screen  bg-slate-50">
           <div
             id="about-container"
             className="block h-screen max-w-[900px] mx-auto bg-slate-100  "
           >
             <div
               id="about-header"
-              className="w-full flex flex-row justify-start items-center"
+              className="w-full flex flex-row justify-center items-center md:justify-start"
             >
               <h2 className="space-x-2 py-6 text-xl font-bold  md:text-4xl">
                 <span className="text-lg text-mint">01.</span>
@@ -66,13 +63,25 @@ export default function Home() {
               </h2>
             </div>
 
-            <div id="about-inner" className="md:grid gap-4 grid-cols-[2fr_1fr]">
-              <div
-                id="about-text"
-                className="flex flex-col items-center justify-start space-y-4 "
-              >
+            <div
+              id="about-inner"
+              className="container md:h-auto md:grid md:gap-4 md:grid-cols-[2fr_1fr]"
+            >
+              <div id="about-text" className="text-center md:text-left">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis obcaecati ratione eum cum porro dicta soluta
+                  iusto possimus cumque ullam esse, laboriosam, aliquam maxime
+                  repudiandae doloremque ad magni. Impedit, molestias. Lorem
+                  ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis obcaecati ratione eum cum porro dicta soluta
+                  iusto possimus cumque ullam esse, laboriosam, aliquam maxime
+                  repudiandae doloremque ad magni. Impedit, molestias. Lorem
+                  ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis obcaecati ratione eum cum porro dicta soluta
+                  iusto possimus cumque ullam esse, laboriosam, aliquam maxime
+                  repudiandae doloremque ad magni. Impedit, molestias. Lorem
+                  ipsum dolor sit amet, consectetur adipisicing elit.
                   Perspiciatis obcaecati ratione eum cum porro dicta soluta
                   iusto possimus cumque ullam esse, laboriosam, aliquam maxime
                   repudiandae doloremque ad magni. Impedit, molestias.
@@ -80,7 +89,7 @@ export default function Home() {
               </div>
               {/*     /bg-[url('../public/antony-merle.jpg')] */}
               {/* bloc image */}
-              <div className="block container mx-auto md:flex-row md:justify-start md:items-center ">
+              <div className="block container  md:flex-row md:justify-start md:items-center ">
                 <div id="about-picture" className="relative">
                   <div className="z-10 block absolute object-cover h-[250px] w-[250px] bg-slate-300 ">
                     <img src="antony-merle.jpg"></img>
