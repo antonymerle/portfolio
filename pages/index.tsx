@@ -91,10 +91,10 @@ export default function Home() {
               {/* bloc image */}
               <div className="block container  md:flex-row md:justify-start md:items-center ">
                 <div id="about-picture" className="relative">
-                  <div className="z-10 block absolute object-cover h-[250px] w-[250px] bg-slate-300 ">
+                  <div className=" block mx-auto my-10 shadow-[10px_10px_#72ECCE] object-cover h-[250px] w-[250px] bg-slate-300 md:my-0 md:z-10 md:absolute md:shadow-none">
                     <img src="antony-merle.jpg"></img>
                   </div>
-                  <div className="z-0 block absolute top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2  border-slate-800"></div>
+                  <div className="hidden top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2  border-slate-800 md:block md:z-0 md:absolute"></div>
                 </div>
               </div>
               {/* bloc image */}
