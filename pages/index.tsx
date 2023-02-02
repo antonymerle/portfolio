@@ -66,7 +66,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div id="about-inner" className="md:grid gap-4 grid-cols-2">
+            <div id="about-inner" className="md:grid gap-4 grid-cols-[2fr_1fr]">
               <div
                 id="about-text"
                 className="flex flex-col items-center justify-start space-y-4 "
