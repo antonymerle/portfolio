@@ -99,6 +99,16 @@ export default function Home() {
               </div>
               {/* bloc image */}
             </div>
+
+            {/* bloc compétences */}
+            <ul className="flex flex-col flex-wrap h-20">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>NodeJS</li>
+              <li>MongoDB</li>
+              <li>Express</li>
+              <li>NextJS</li>
+            </ul>
           </div>
         </section>
         <section id="projects">
