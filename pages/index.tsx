@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const plusBullet = (
-    <FontAwesomeIcon icon={faPlus} style={{ height: "15px" }} />
+    <FontAwesomeIcon icon={faPlus} style={{ height: "10px" }} />
   );
 
   return (
@@ -93,7 +93,7 @@ export default function Home() {
                   repudiandae doloremque ad magni. Impedit, molestias.
                 </p>
                 {/* bloc compétences */}
-                <ul className="flex flex-col flex-wrap h-20 my-4">
+                <ul className="grid grid-cols-2 grid-rows-3 flex-wrap h-20 my-4 text-sm">
                   <li className="flex">
                     <span className="mr-2">{plusBullet}</span>JavaScript
                   </li>
