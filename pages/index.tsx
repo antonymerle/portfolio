@@ -2,10 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const plusBullet = (
+    <FontAwesomeIcon icon={faPlus} style={{ height: "15px" }} />
+  );
+
   return (
     <div className="bg-slate-800 font-sans">
       <Head>
@@ -19,10 +25,10 @@ export default function Home() {
           <img src="logo.jpg" alt="logo" className="h-[80px] w-[8 0px]" />
           {/* Menu items */}
           <ol className="hidden md:flex justify-between items-center space-x-6 text-mint  ">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li>Resume</li>
+            <li className="flex">About</li>
+            <li className="flex">Projects</li>
+            <li className="flex">Contact</li>
+            <li className="flex">Resume</li>
           </ol>
         </nav>
       </header>
@@ -65,7 +71,7 @@ export default function Home() {
 
             <div
               id="about-inner"
-              className="container md:h-auto md:grid md:gap-4 md:grid-cols-[2fr_1fr]"
+              className="flex flex-col container md:h-auto md:grid md:gap-4 md:grid-cols-[2fr_1fr] md:grid-rows-2"
             >
               <div id="about-text" className="text-center md:text-left">
                 <p>
@@ -86,6 +92,27 @@ export default function Home() {
                   iusto possimus cumque ullam esse, laboriosam, aliquam maxime
                   repudiandae doloremque ad magni. Impedit, molestias.
                 </p>
+                {/* bloc compétences */}
+                <ul className="flex flex-col flex-wrap h-20 my-4">
+                  <li className="flex">
+                    <span className="mr-2">{plusBullet}</span>JavaScript
+                  </li>
+                  <li className="flex">
+                    <span className="mr-2">{plusBullet}</span>TypeScript
+                  </li>
+                  <li className="flex">
+                    <span className="mr-2">{plusBullet}</span>NodeJS
+                  </li>
+                  <li className="flex">
+                    <span className="mr-2">{plusBullet}</span>MongoDB
+                  </li>
+                  <li className="flex">
+                    <span className="mr-2">{plusBullet}</span>Express
+                  </li>
+                  <li className="flex">
+                    <span className="mr-2">{plusBullet}</span>NextJS
+                  </li>
+                </ul>
               </div>
               {/*     /bg-[url('../public/antony-merle.jpg')] */}
               {/* bloc image */}
@@ -97,18 +124,7 @@ export default function Home() {
                   <div className="hidden top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2  border-slate-800 md:block md:z-0 md:absolute"></div>
                 </div>
               </div>
-              {/* bloc image */}
             </div>
-
-            {/* bloc compétences */}
-            <ul className="flex flex-col flex-wrap h-20">
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>NodeJS</li>
-              <li>MongoDB</li>
-              <li>Express</li>
-              <li>NextJS</li>
-            </ul>
           </div>
         </section>
         <section id="projects">
