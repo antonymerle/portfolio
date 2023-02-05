@@ -146,7 +146,12 @@ export default function Home() {
             </div>
             <ul>
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
-              <li className="grid grid-cols-12 gap-2">project 1</li>
+              <li className="grid grid-cols-12 gap-2">
+                <div className="project-wrapper">
+                  <div className="project-img"></div>
+                  <div className="project-description"></div>
+                </div>
+              </li>
               <li>project 2</li>
               <li>project 3</li>
             </ul>
