@@ -43,6 +43,7 @@ export default function Home() {
               <span className="text-slate-50">Antony Merle.</span>
               <span>I build apps for today's Internet.</span>
             </h1>
+            {/* TODO: make it readable on large screen by narrowing column */}
             <p>
               Full Stack Web Developer with a passion for crafting intuitive and
               user-friendly web experiences. My main focus is developing
@@ -114,7 +115,6 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              {/*     /bg-[url('../public/antony-merle.jpg')] */}
               {/* bloc image */}
               <div className="block container  md:flex-row md:justify-start md:items-center ">
                 <div id="about-picture" className="relative">
@@ -127,8 +127,30 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="projects">
-          Here are a few of the projects I worked on lately.
+        <section
+          id="projects"
+          className="h-screen w-full flex flex-col justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300  md:px-24 md:text-left lg:px-64"
+        >
+          <div
+            id="projects-container"
+            className="flex flex-col items-start h-screen w-full max-w-[900px]"
+          >
+            <div
+              id="projects-header"
+              className="w-full flex flex-row justify-center items-center md:justify-start"
+            >
+              <h2 className="space-x-2 py-6 text-xl font-bold  md:text-4xl">
+                <span className="text-lg text-mint">03.</span>
+                <span>Projects I built</span>
+              </h2>
+            </div>
+            <ul>
+              {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
+              <li className="grid grid-cols-12 gap-2">project 1</li>
+              <li>project 2</li>
+              <li>project 3</li>
+            </ul>
+          </div>
         </section>
         <section id="contact">Let's talk.</section>
       </main>
