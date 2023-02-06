@@ -3,7 +3,9 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import jellyfish from "../public/jellyfish.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -146,10 +148,47 @@ export default function Home() {
             </div>
             <ul>
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
-              <li className="grid grid-cols-12 gap-2">
-                <div className="project-wrapper">
-                  <div className="project-img"></div>
-                  <div className="project-description"></div>
+              <li className="grid grid-cols-12 grid-rows-6 gap-2 overflow-hidden">
+                <div className="project-img col-start-1 col-end-8 row-span-full">
+                  <Image
+                    src={jellyfish}
+                    width={600}
+                    alt="projet1"
+                    className="object-fill min-w-[600px]"
+                  />
+                </div>
+                <div className="project-description col-start-7 col-end-13 row-span-full">
+                  <h3 className="col-start-9 col-end-13 row-span-1 text-right py-8 text-slate-300 text-2xl font-bold">
+                    JellyFish
+                  </h3>
+                  <p className="col-start-7 col-end-13 col bg-slate-600 text-slate-300 text-sm text-right p-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                    molestiae earum, provident corrupti iste dolorum maiores
+                    quisquam repellendus in similique dicta veritatis eius
+                    expedita labore incidunt laborum ex deserunt porro.
+                  </p>
+                  <ul className="project-technos flex justify-end text-sm space-x-2 py-4 text-mint">
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>React</li>
+                    <li>NodeJS</li>
+                  </ul>
+                  <ul className="project-code-live flex justify-end space-x-2 py-4">
+                    <li>
+                      <FontAwesomeIcon
+                        icon={faGithubAlt}
+                        className="text-mint"
+                        style={{ height: "20px" }}
+                      />
+                    </li>
+                    <li>
+                      <FontAwesomeIcon
+                        icon={faRightFromBracket}
+                        style={{ height: "20px" }}
+                        className="text-mint"
+                      />
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li>project 2</li>
