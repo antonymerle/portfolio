@@ -149,9 +149,9 @@ export default function Home() {
             <ul className="space-y-44">
               {/* SHOWCASE PROJECT 1 */}
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
-              <li className="flex flex-col  md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="w-full h-full bg-[url('../public/jellyfish.png')] bg-blend-normal bg-cover rounded-sm min-w-[200px] project-img md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
-                  <div className="w-full h-full flex  justify-center items-center bg-mint/30 backdrop-brightness-75"></div>
+              <li className="flex flex-col w-full bg-[url('../public/jellyfish.png')]  bg-cover bg-no-repeat md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
+                <div className="w-full h-full bg-[url('../public/jellyfish.png')] bg-cover rounded-sm min-w-[200px] md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
+                  <div className="w-full h-full  md:bg-mint/60 md:backdrop-brightness-75"></div>
                 </div>
 
                 {/* <Image
