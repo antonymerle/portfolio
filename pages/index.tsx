@@ -149,19 +149,19 @@ export default function Home() {
             <ul>
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
               <li className="grid grid-cols-12 grid-rows-6 gap-2 overflow-hidden">
-                <div className="project-img col-start-1 col-end-8 row-span-full">
+                <div className="project-img col-start-1 col-end-8 row-span-full bg-mint min-w-[600px] z-10 rounded-sm">
                   <Image
                     src={jellyfish}
                     width={600}
                     alt="projet1"
-                    className="object-fill min-w-[600px]"
+                    className="object-fill min-w-[600px] opacity-50 "
                   />
                 </div>
-                <div className="project-description col-start-7 col-end-13 row-span-full">
+                <div className="project-description col-start-7 col-end-13 row-span-full relative z-10">
                   <h3 className="col-start-9 col-end-13 row-span-1 text-right py-8 text-slate-300 text-2xl font-bold">
                     JellyFish
                   </h3>
-                  <p className="col-start-7 col-end-13 col bg-slate-600 text-slate-300 text-sm text-right p-4">
+                  <p className="col-start-7 col-end-13 col bg-cybGrey text-slate-300 text-sm text-right p-4 rounded-sm ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                     molestiae earum, provident corrupti iste dolorum maiores
                     quisquam repellendus in similique dicta veritatis eius
@@ -177,7 +177,7 @@ export default function Home() {
                     <li>
                       <FontAwesomeIcon
                         icon={faGithubAlt}
-                        className="text-mint"
+                        className="text-slate-300"
                         style={{ height: "20px" }}
                       />
                     </li>
@@ -185,7 +185,7 @@ export default function Home() {
                       <FontAwesomeIcon
                         icon={faRightFromBracket}
                         style={{ height: "20px" }}
-                        className="text-mint"
+                        className="text-slate-300"
                       />
                     </li>
                   </ul>
