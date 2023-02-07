@@ -149,8 +149,9 @@ export default function Home() {
             <ul className="space-y-44">
               {/* SHOWCASE PROJECT 1 */}
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
-              <li className="flex flex-col w-full bg-[url('../public/jellyfish.png')]  bg-cover bg-no-repeat md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="w-full h-full bg-[url('../public/jellyfish.png')] bg-cover rounded-sm min-w-[200px] md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
+              {/* bg-[url('../public/jellyfish.png')] bg-cover bg-no-repeat */}
+              <li className="relative w-full h-1/3 md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-full opacity-40 bg-[url('../public/jellyfish.png')] bg-cover bg-no-repeat rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   <div className="w-full h-full  md:bg-mint/60 md:backdrop-brightness-75"></div>
                 </div>
 
@@ -161,23 +162,23 @@ export default function Home() {
                     className="hidden object-cover min-w-[480px] md:min-w-[600px] md:opacity-50 "
                   /> */}
 
-                <div className="project-description col-start-7 col-end-13 row-span-full relative z-10">
-                  <h3 className="col-start-9 col-end-13 row-span-1 text-right py-8 text-slate-300 text-2xl font-bold">
+                <div className=" project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20">
+                  <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-9 md:col-end-13 md:row-span-1 md:text-right">
                     JellyFish
                   </h3>
-                  <p className="col-start-7 col-end-13 col bg-cybGrey text-slate-300 text-sm text-right p-4 rounded-sm ">
+                  <p className="text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-right p-4 md:col-start-7 md:col-end-13">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                     molestiae earum, provident corrupti iste dolorum maiores
                     quisquam repellendus in similique dicta veritatis eius
                     expedita labore incidunt laborum ex deserunt porro.
                   </p>
-                  <ul className="project-technos flex justify-end text-sm space-x-2 py-4 text-mint">
+                  <ul className="project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-end">
                     <li>MongoDB</li>
                     <li>Express</li>
                     <li>React</li>
                     <li>NodeJS</li>
                   </ul>
-                  <ul className="project-code-live flex justify-end space-x-2 py-4">
+                  <ul className="project-code-live flex justify-center  space-x-2 py-4 md:justify-end">
                     <li>
                       <FontAwesomeIcon
                         icon={faGithubAlt}
