@@ -146,8 +146,56 @@ export default function Home() {
                 <span>Projects I built</span>
               </h2>
             </div>
-            <ul>
+            <ul className="space-y-44">
+              {/* SHOWCASE PROJECT 1 */}
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
+              <li className="flex flex-col  md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
+                <div className="w-full h-full bg-[url('../public/jellyfish.png')] bg-blend-normal bg-cover rounded-sm min-w-[200px] project-img md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
+                  <div className="w-full h-full flex  justify-center items-center bg-mint/30 backdrop-brightness-75"></div>
+                </div>
+
+                {/* <Image
+                    src={jellyfish}
+                    width={600}
+                    alt="projet1"
+                    className="hidden object-cover min-w-[480px] md:min-w-[600px] md:opacity-50 "
+                  /> */}
+
+                <div className="project-description col-start-7 col-end-13 row-span-full relative z-10">
+                  <h3 className="col-start-9 col-end-13 row-span-1 text-right py-8 text-slate-300 text-2xl font-bold">
+                    JellyFish
+                  </h3>
+                  <p className="col-start-7 col-end-13 col bg-cybGrey text-slate-300 text-sm text-right p-4 rounded-sm ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                    molestiae earum, provident corrupti iste dolorum maiores
+                    quisquam repellendus in similique dicta veritatis eius
+                    expedita labore incidunt laborum ex deserunt porro.
+                  </p>
+                  <ul className="project-technos flex justify-end text-sm space-x-2 py-4 text-mint">
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>React</li>
+                    <li>NodeJS</li>
+                  </ul>
+                  <ul className="project-code-live flex justify-end space-x-2 py-4">
+                    <li>
+                      <FontAwesomeIcon
+                        icon={faGithubAlt}
+                        className="text-slate-300"
+                        style={{ height: "20px" }}
+                      />
+                    </li>
+                    <li>
+                      <FontAwesomeIcon
+                        icon={faRightFromBracket}
+                        style={{ height: "20px" }}
+                        className="text-slate-300"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              {/* SHOWCASE PROJECT 2 */}
               <li className="grid grid-cols-12 grid-rows-6 gap-2 overflow-hidden">
                 <div className="project-img col-start-1 col-end-8 row-span-full bg-mint min-w-[600px] z-10 rounded-sm">
                   <Image
@@ -191,7 +239,6 @@ export default function Home() {
                   </ul>
                 </div>
               </li>
-              <li>project 2</li>
               <li>project 3</li>
             </ul>
           </div>
