@@ -149,19 +149,10 @@ export default function Home() {
             <ul className="space-y-44">
               {/* SHOWCASE PROJECT 1 */}
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
-              {/* bg-[url('../public/jellyfish.png')] bg-cover bg-no-repeat */}
               <li className="relative w-full h-1/3 md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
                 <div className="absolute transition-all hover:scale-105 hover:rounded-sm duration-300 top-0 left-0 w-full h-full opacity-40 bg-[url('../public/jellyfish.png')] bg-cover bg-no-repeat rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div>
                 </div>
-
-                {/* <Image
-                    src={jellyfish}
-                    width={600}
-                    alt="projet1"
-                    className="hidden object-cover min-w-[480px] md:min-w-[600px] md:opacity-50 "
-                  /> */}
-
                 <div className=" project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20">
                   <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-9 md:col-end-13 md:row-span-1 md:text-right">
                     JellyFish
@@ -198,17 +189,48 @@ export default function Home() {
               </li>
               {/* SHOWCASE PROJECT 2 */}
               <li className="relative w-full h-1/3 md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
+                <div className="absolute transition-all hover:scale-105 hover:rounded-sm duration-300 top-0 left-0 w-full h-full opacity-40 bg-[url('../public/jellyfish.png')] bg-cover bg-no-repeat rounded-sm min-w-[200px] md:opacity-100 md:col-start-5 md:col-end-13 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
+                  <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div>
+                </div>
+                <div className=" project-description md:col-start-1 md:col-end-7 md:row-span-full md:z-20">
+                  <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-1 md:col-end-4 md:row-span-1 md:text-left">
+                    JellyFish
+                  </h3>
+                  <p className="text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-left p-4 md:col-start-7 md:col-end-13">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                    molestiae earum, provident corrupti iste dolorum maiores
+                    quisquam repellendus in similique dicta veritatis eius
+                    expedita labore incidunt laborum ex deserunt porro.
+                  </p>
+                  <ul className="project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-start">
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>React</li>
+                    <li>NodeJS</li>
+                  </ul>
+                  <ul className="project-code-live flex justify-center  space-x-2 py-4 md:justify-start">
+                    <li>
+                      <FontAwesomeIcon
+                        icon={faGithubAlt}
+                        className="text-slate-300"
+                        style={{ height: "20px" }}
+                      />
+                    </li>
+                    <li>
+                      <FontAwesomeIcon
+                        icon={faRightFromBracket}
+                        style={{ height: "20px" }}
+                        className="text-slate-300"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              {/* SHOWCASE PROJECT 3 */}
+              <li className="relative w-full h-1/3 md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
                 <div className="absolute transition-all hover:scale-105 hover:rounded-sm duration-300 top-0 left-0 w-full h-full opacity-40 bg-[url('../public/jellyfish.png')] bg-cover bg-no-repeat rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div>
                 </div>
-
-                {/* <Image
-                    src={jellyfish}
-                    width={600}
-                    alt="projet1"
-                    className="hidden object-cover min-w-[480px] md:min-w-[600px] md:opacity-50 "
-                  /> */}
-
                 <div className=" project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20">
                   <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-9 md:col-end-13 md:row-span-1 md:text-right">
                     JellyFish
@@ -243,7 +265,6 @@ export default function Home() {
                   </ul>
                 </div>
               </li>
-              <li>project 3</li>
             </ul>
           </div>
         </section>
