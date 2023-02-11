@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 import jellyfish from "../public/jellyfish.png";
+import logo from "../public/logo.jpg";
+import pp from "../public/antony-merle.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +26,7 @@ export default function Home() {
       </Head>
       <header className="relative container mx-auto p-6 ">
         <nav className="flex items-center justify-between">
-          <img src="logo.jpg" alt="logo" className="h-[80px] w-[8 0px]" />
+          <Image src={logo} alt="logo" width={80} height={80} />
           {/* Menu items */}
           <ol className="hidden md:flex justify-between items-center space-x-6 text-mint  ">
             <li className="flex">About</li>
@@ -122,7 +124,12 @@ export default function Home() {
               <div className="block container  md:flex-row md:justify-start md:items-center ">
                 <div id="about-picture" className="relative">
                   <div className=" block mx-auto my-10 shadow-[10px_10px_#72ECCE] object-cover h-[250px] w-[250px] bg-slate-300 md:my-0 md:z-10 md:absolute md:shadow-none">
-                    <img src="antony-merle.jpg"></img>
+                    <Image
+                      src={pp}
+                      alt="antony merle picture"
+                      width={250}
+                      height={250}
+                    />
                   </div>
                   <div className="hidden top-[20px] left-[20px] h-[250px] w-[250px] border-solid border-2  border-slate-800 md:block md:z-0 md:absolute"></div>
                 </div>
