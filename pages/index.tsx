@@ -302,11 +302,15 @@ export default function Home() {
           id="contact"
           className="w-full h-screen flex justify-center items-center bg-slate-50"
         >
-          <div className="contact-container text-slate-600">
+          <div className="contact-container max-w-[768px] text-slate-600">
             <h2 className="text-3xl font-bold  md:text-6xl text-center">
               Let's build something <span className="text-mint">great</span>{" "}
-              together!
+              together !
             </h2>
+            <p>
+              I'd love to hear about your opportunities. Let's connect and see
+              how I can contribute to your next project.
+            </p>
           </div>
         </section>
       </main>
