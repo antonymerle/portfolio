@@ -159,7 +159,7 @@ export default function Home() {
               {/* SHOWCASE PROJECT 1 */}
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
               <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 top-0 left-0  bg-cover bg-no-repeat rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
+                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   {/* TODO : replace css bg by optimzed image  */}
                   <Image
                     src={jellyfish}
@@ -205,7 +205,7 @@ export default function Home() {
               </li>
               {/* SHOWCASE PROJECT 2 */}
               <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 top-0 left-0  bg-cover bg-no-repeat rounded-sm min-w-[200px] md:opacity-100 md:col-start-5 md:col-end-13 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
+                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-5 md:col-end-13 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   {/* TODO : replace css bg by optimzed image  */}
                   <Image
                     src={jellyfish}
@@ -251,7 +251,7 @@ export default function Home() {
               </li>
               {/* SHOWCASE PROJECT 3 */}
               <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 top-0 left-0  bg-cover bg-no-repeat rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
+                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   {/* TODO : replace css bg by optimzed image  */}
                   <Image
                     src={jellyfish}
