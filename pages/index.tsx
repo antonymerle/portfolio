@@ -60,10 +60,10 @@ export default function Home() {
         </section>
 
         {/* ABOUT */}
-        <section id="about" className="w-full h-screen  bg-slate-50">
+        <section id="about" className="h-max w-full h-screen  bg-slate-50">
           <div
             id="about-container"
-            className="block h-screen max-w-[900px] mx-auto bg-slate-100  "
+            className="h-max max-w-[900px] mx-auto bg-slate-100"
           >
             <div
               id="about-header"
@@ -158,20 +158,18 @@ export default function Home() {
             <ul className="space-y-44">
               {/* SHOWCASE PROJECT 1 */}
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
-              <li className=" w-full h-[350px] md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className=" transition-all hover:scale-105 hover:rounded-sm duration-300 top-0 left-0 w-full h-full opacity-40 bg-[url('../public/jellyfish.png')] bg-cover bg-no-repeat rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
+              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
+                <div className=" transition-all hover:scale-105 hover:rounded-sm duration-300 top-0 left-0  bg-cover bg-no-repeat rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   {/* TODO : replace css bg by optimzed image  */}
-                  {/* <Image
-                    src={pp}
+                  <Image
+                    src={jellyfish}
                     alt="antony merle picture"
-                    width={250}
-                    height={250}
-                    className="opacity-80"    // change that when hover
-                  /> */}
+                    className="opacity-40 -z-1" // change that when hover
+                  />
 
-                  <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div>
+                  {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
                 </div>
-                <div className=" project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20">
+                <div className="absolute top-0 left-0 project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20">
                   <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-9 md:col-end-13 md:row-span-1 md:text-right">
                     JellyFish
                   </h3>
