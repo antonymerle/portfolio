@@ -300,17 +300,26 @@ export default function Home() {
         </section>
         <section
           id="contact"
-          className="w-full h-screen flex justify-center items-center bg-slate-50"
+          className="w-full h-screen flex flex-col items-center justify-start px-4 bg-slate-50"
         >
-          <div className="contact-container max-w-[768px] text-slate-600">
-            <h2 className="text-3xl font-bold  md:text-6xl text-center">
-              Let's build something <span className="text-mint">great</span>{" "}
-              together !
+          <div className="flex flex-col justify-end space-y-6 mb-12 h-3/5 max-w-[768px] text-slate-600">
+            <h2 className="text-4xl font-bold  md:text-6xl text-center">
+              Let's build something great{" "}
+              <span className="text-mint">together</span>{" "}
             </h2>
-            <p>
+            <p className="max-w-md mx-auto text-center">
               I'd love to hear about your opportunities. Let's connect and see
-              how I can contribute to your next project.
+              how I can contribute.
             </p>
+          </div>
+          <div className="bottom h-2/5">
+            <button
+              className="border py-5 px-12 border-slate-600 text-slate-600 
+          leading-4 rounded-md 
+          transition ease-in  bg-slate-50 hover:bg-mintTransparent"
+            >
+              Say Hi !
+            </button>
           </div>
         </section>
       </main>
