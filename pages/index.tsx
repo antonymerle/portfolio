@@ -60,7 +60,7 @@ export default function Home() {
         </section>
 
         {/* ABOUT */}
-        <section id="about" className="h-max w-full h-screen  bg-slate-50">
+        <section id="about" className="h-max w-full  bg-slate-50">
           <div
             id="about-container"
             className="h-max max-w-[900px] mx-auto bg-slate-100"
@@ -140,7 +140,7 @@ export default function Home() {
         {/* PROJETS */}
         <section
           id="projects"
-          className="h-max w-full flex flex-col flex-grow-1 justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300  md:px-24 md:text-left lg:px-64"
+          className="h-max w-full flex flex-col flex-grow-1 justify-start space-y-4 px-6 py-48 bg-slate-800 text-center text-slate-300  md:px-24 md:text-left lg:px-64"
         >
           <div
             id="projects-container"
@@ -298,8 +298,16 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        <section id="contact" className="w-full h-screen  bg-slate-50">
-          Let's talk.
+        <section
+          id="contact"
+          className="w-full h-screen flex justify-center items-center bg-slate-50"
+        >
+          <div className="contact-container text-slate-600">
+            <h2 className="text-3xl font-bold  md:text-6xl text-center">
+              Let's build something <span className="text-mint">great</span>{" "}
+              together!
+            </h2>
+          </div>
         </section>
       </main>
       <footer>Antony Merle, {new Date().getFullYear()}</footer>
