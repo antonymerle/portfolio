@@ -143,7 +143,7 @@ export default function Home() {
         {/* PROJETS */}
         <section
           id="projects"
-          className="h-max w-full flex flex-col flex-grow-1 justify-start space-y-4 px-6 py-24 bg-slate-800 text-center text-slate-300  md:px-24 md:text-left lg:px-64"
+          className="h-max w-full flex flex-col flex-grow-1 justify-start space-y-4 px-6 py-24 bg-slate-800 text-center text-slate-300  md:px-24 md:text-left lg:pl-64"
         >
           <div
             id="projects-container"
