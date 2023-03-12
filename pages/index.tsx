@@ -74,7 +74,7 @@ export default function Home() {
         </section>
 
         {/* ABOUT */}
-        <section id="about" className="h-max w-full py-24 bg-slate-50">
+        <section id="about" className="h-max w-full py-24 px-6 bg-slate-50">
           <div
             id="about-container"
             className="h-max max-w-[900px] mx-auto bg-slate-100"
