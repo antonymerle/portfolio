@@ -15,6 +15,8 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import jellyfish from "../public/jellyfish.png";
+import istexUPPA from "../public/istex-uppa.jpg";
+import istexUPPA2 from "../public/istex-uppa2.jpg";
 import logo from "../public/logo.jpg";
 import logoFullSize from "../public/logo.png";
 import pp from "../public/antony-merle.jpg";
@@ -95,22 +97,18 @@ export default function Home() {
             >
               <div id="about-text" className="text-center md:text-left">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Perspiciatis obcaecati ratione eum cum porro dicta soluta
-                  iusto possimus cumque ullam esse, laboriosam, aliquam maxime
-                  repudiandae doloremque ad magni. Impedit, molestias. Lorem
-                  ipsum dolor sit amet, consectetur adipisicing elit.
-                  Perspiciatis obcaecati ratione eum cum porro dicta soluta
-                  iusto possimus cumque ullam esse, laboriosam, aliquam maxime
-                  repudiandae doloremque ad magni. Impedit, molestias. Lorem
-                  ipsum dolor sit amet, consectetur adipisicing elit.
-                  Perspiciatis obcaecati ratione eum cum porro dicta soluta
-                  iusto possimus cumque ullam esse, laboriosam, aliquam maxime
-                  repudiandae doloremque ad magni. Impedit, molestias. Lorem
-                  ipsum dolor sit amet, consectetur adipisicing elit.
-                  Perspiciatis obcaecati ratione eum cum porro dicta soluta
-                  iusto possimus cumque ullam esse, laboriosam, aliquam maxime
-                  repudiandae doloremque ad magni. Impedit, molestias.
+                  I live in the Basque Country, southwest of France. I am a
+                  father of three. Since the beginning of my programming journey
+                  in 2017, I worked for the public sector, as head of IT for the
+                  University of Pau libraries. I specialized in the MERN stack
+                  to build applications everybody could share and use in their
+                  browser. I learned the JavaScript, specifically the MERN stack
+                  and I used that knowledge to build online apps to provide
+                  business intelligence, automatize repetitive task, help
+                  student to get online services, etc. In 2023, I gratuaded at
+                  La Capsule bootcamp, worked on board.lease, a peer to peer
+                  surfoard renting mobile-first website. I am now open to work.
+                  Here are some details about my stack :
                 </p>
                 {/* bloc compétences */}
                 <ul className="grid grid-cols-2 grid-rows-3 flex-wrap h-20 my-4 text-sm">
@@ -124,13 +122,19 @@ export default function Home() {
                     <span className="mr-2">{plusBullet}</span>NodeJS
                   </li>
                   <li className="flex">
-                    <span className="mr-2">{plusBullet}</span>MongoDB
-                  </li>
-                  <li className="flex">
                     <span className="mr-2">{plusBullet}</span>Express
                   </li>
                   <li className="flex">
                     <span className="mr-2">{plusBullet}</span>NextJS
+                  </li>
+                  <li className="flex">
+                    <span className="mr-2">{plusBullet}</span>React Native
+                  </li>
+                  <li className="flex">
+                    <span className="mr-2">{plusBullet}</span>MongoDB
+                  </li>
+                  <li className="flex">
+                    <span className="mr-2">{plusBullet}</span>mySQL
                   </li>
                 </ul>
               </div>
@@ -176,7 +180,9 @@ export default function Home() {
                 <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   {/* TODO : replace css bg by optimzed image  */}
                   <Image
-                    src={jellyfish}
+                    src={istexUPPA2}
+                    width={800}
+                    height={450}
                     alt="antony merle picture"
                     className="opacity-40 -z-1" // change that when hover
                   />
@@ -188,31 +194,41 @@ export default function Home() {
                     JellyFish
                   </h3>
                   <p className="text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-right p-4 md:col-start-7 md:col-end-13">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                    molestiae earum, provident corrupti iste dolorum maiores
-                    quisquam repellendus in similique dicta veritatis eius
-                    expedita labore incidunt laborum ex deserunt porro.
+                    A search engine frontend to the ISTEX database : explore
+                    scientific, technical, and medical research through 27
+                    millions articles.
                   </p>
                   <ul className="project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-end">
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                    <li>React</li>
-                    <li>NodeJS</li>
+                    <li>TypeScript</li>
+                    <li>Angular</li>
+                    <li>rxjs</li>
                   </ul>
                   <ul className="project-code-live flex justify-center  space-x-2 py-4 md:justify-end">
                     <li>
-                      <FontAwesomeIcon
-                        icon={faGithubAlt}
-                        className="text-slate-300"
-                        style={{ height: "20px" }}
-                      />
+                      <a
+                        href="https://github.com/antonymerle/istex-uppa"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faGithubAlt}
+                          className="text-slate-300"
+                          style={{ height: "20px" }}
+                        />
+                      </a>
                     </li>
                     <li>
-                      <FontAwesomeIcon
-                        icon={faRightFromBracket}
-                        style={{ height: "20px" }}
-                        className="text-slate-300"
-                      />
+                      <a
+                        href="https://istex-uppa.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faRightFromBracket}
+                          style={{ height: "20px" }}
+                          className="text-slate-300"
+                        />
+                      </a>
                     </li>
                   </ul>
                 </div>
