@@ -28,7 +28,7 @@ export default function Home() {
   );
 
   return (
-    <div className="bg-slate-800 font-sans">
+    <div className="bg-slate-800 font-sans w-full">
       <Head>
         <title>Antony Merle</title>
         <meta
