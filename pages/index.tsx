@@ -7,6 +7,10 @@ import {
   faPlus,
   faRightFromBracket,
   faEnvelope,
+  faChartColumn,
+  faLineChart,
+  faWater,
+  faShieldHalved,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithubAlt,
@@ -354,6 +358,154 @@ export default function Home() {
             </ul>
           </div>
         </section>
+        {/* OTHER SIGNIFICANTS PROJECTS */}
+        <section
+          id="other-projects"
+          className="w-full h-max flex flex-col items-center justify-center px-4 py-24 bg-slate-800"
+        >
+          <h2 className="space-x-2 py-6 text-xl font-bold  md:text-4xl  text-mint">
+            Other significants projects
+          </h2>
+
+          <ul className="flex flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 bg-slate-50 lg:flex-row lg:w-2/3">
+            <li className="w-full mb-4 bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
+              <FontAwesomeIcon
+                icon={faLineChart}
+                className="text-slate-300 pb-4 h-[4rem]"
+              />
+              <h3 className="text-xl font-bold pb-4 lg:text-3xl">
+                SISE ANALYTICS
+              </h3>
+              <p>
+                SISE Analytics is a dashboard that fetches Full-Time-Equivalent
+                (FTE) of french universities, process the data and export it on
+                a SpreadSheet. Sise Analytics helps academic libraries to manage
+                their electronic resources acquisitions based on that FTE data.
+              </p>
+              <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
+                <li>
+                  <a
+                    href="https://git.univ-pau.fr/amerle001/sise-analytics"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithubAlt}
+                      className="text-slate-300"
+                      style={{ height: "30px" }}
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://stats-sise.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faRightFromBracket}
+                      style={{ height: "30px" }}
+                      className="text-slate-300"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li className="w-full  mb-4 bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
+              <FontAwesomeIcon
+                icon={faWater}
+                className="text-slate-300 pb-4 h-[4rem]"
+              />
+              <h3 className="text-3xl font-bold pb-4">BOARD.LEASE</h3>
+              <p>
+                Board.lease is a platform made by surfers for surfers. On
+                board.lease, you can rent your board on your future holiday
+                spot. If you're a local, you can put your surfboard to rent,
+                make a little money and help a fellow surfer ! Board.lease is an
+                academic project designed to be displayed on mobile phones only.
+              </p>
+              <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
+                <li>
+                  <a
+                    href="https://github.com/antonymerle/boardLeaseBackend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithubAlt}
+                      className="text-slate-300"
+                      style={{ height: "30px" }}
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://board-lease-frontend.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faRightFromBracket}
+                      style={{ height: "30px" }}
+                      className="text-slate-300"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li className="w-full  mb-4 bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
+              <FontAwesomeIcon
+                icon={faShieldHalved}
+                className="text-slate-300 pb-4 h-[4rem]"
+              />
+              <h3 className="text-3xl font-bold pb-4">
+                anti-phishing browser extension
+              </h3>
+              <p>
+                UPPA anti-phishing is a web browser extension designed to
+                protect Université de Pau webmail users from phishing mails.
+                Attacks being very predictable, the extension is able to detect
+                malicious links, sanitize them and display an informative
+                message to the user.
+              </p>
+              <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
+                <li>
+                  <a
+                    href="https://git.univ-pau.fr/amerle001/phishEye"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithubAlt}
+                      className="text-slate-300"
+                      style={{ height: "30px" }}
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://git.univ-pau.fr/amerle001/phishEye/-/releases"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faRightFromBracket}
+                      style={{ height: "30px" }}
+                      className="text-slate-300"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        {/* CONTACT SECTION */}
         <section
           id="contact"
           className="w-full h-screen flex flex-col items-center justify-start px-4 bg-slate-50"
