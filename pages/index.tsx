@@ -387,7 +387,7 @@ export default function Home() {
           alt="logoFullSize"
           width={333}
           height={333}
-          className="rounded-full "
+          className="rounded-full md:transition-all md:hover:scale-105 md:hover:rounded-full md:duration-300 border-4  border-mint"
         />
         <h6 className="text-2xl font- light">
           Antony Merle, {new Date().getFullYear()}
