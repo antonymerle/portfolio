@@ -17,6 +17,7 @@ import {
 import jellyfish from "../public/jellyfish.png";
 import istexUPPA from "../public/istex-uppa.jpg";
 import istexUPPA2 from "../public/istex-uppa2.jpg";
+import kanban from "../public/kanban.jpg";
 import logo from "../public/logo.jpg";
 import logoFullSize from "../public/logo.png";
 import pp from "../public/antony-merle.jpg";
@@ -191,11 +192,11 @@ export default function Home() {
                 </div>
                 <div className="absolute top-0 left-0 project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20">
                   <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-9 md:col-end-13 md:row-span-1 md:text-right">
-                    JellyFish
+                    ISTEX-UPPA
                   </h3>
                   <p className="text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-right p-4 md:col-start-7 md:col-end-13">
                     A search engine frontend to the ISTEX database : explore
-                    scientific, technical, and medical research through 27
+                    scientific, technical and medical research through 27
                     millions articles.
                   </p>
                   <ul className="project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-end">
@@ -238,7 +239,9 @@ export default function Home() {
                 <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-5 md:col-end-13 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   {/* TODO : replace css bg by optimzed image  */}
                   <Image
-                    src={jellyfish}
+                    src={kanban}
+                    width={710}
+                    height={450}
                     alt="antony merle picture"
                     className="opacity-40 -z-1" // change that when hover
                   />
@@ -247,34 +250,44 @@ export default function Home() {
                 </div>
                 <div className="absolute top-0 left-0 project-description md:col-start-1 md:col-end-7 md:row-span-full md:z-20">
                   <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-1 md:col-end-4 md:row-span-1 md:text-left">
-                    JellyFish
+                    Kanban
                   </h3>
                   <p className="text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-left p-4 md:col-start-1 md:col-end-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                    molestiae earum, provident corrupti iste dolorum maiores
-                    quisquam repellendus in similique dicta veritatis eius
-                    expedita labore incidunt laborum ex deserunt porro.
+                    A kanban board that let you manage tasks efficiently by
+                    draging and dropping items from one column to another.
                   </p>
                   <ul className="project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-start">
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                    <li>React</li>
                     <li>NodeJS</li>
+                    <li>Express</li>
+                    <li>Socket.io</li>
+                    <li>React</li>
                   </ul>
                   <ul className="project-code-live flex justify-center  space-x-2 py-4 md:justify-start">
                     <li>
-                      <FontAwesomeIcon
-                        icon={faGithubAlt}
-                        className="text-slate-300"
-                        style={{ height: "20px" }}
-                      />
+                      <a
+                        href="https://github.com/antonymerle/kanban-backend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faGithubAlt}
+                          className="text-slate-300"
+                          style={{ height: "20px" }}
+                        />
+                      </a>
                     </li>
                     <li>
-                      <FontAwesomeIcon
-                        icon={faRightFromBracket}
-                        style={{ height: "20px" }}
-                        className="text-slate-300"
-                      />
+                      <a
+                        href="https://kanban-frontend.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faRightFromBracket}
+                          style={{ height: "20px" }}
+                          className="text-slate-300"
+                        />
+                      </a>
                     </li>
                   </ul>
                 </div>
