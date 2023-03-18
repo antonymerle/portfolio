@@ -367,8 +367,8 @@ export default function Home() {
             Other significants projects
           </h2>
 
-          <ul className="flex flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 bg-slate-50 lg:flex-row lg:w-2/3">
-            <li className="w-full mb-4 bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
+          <ul className="flex md:flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 lg:flex-row lg:w-2/3">
+            <li className="w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
               <FontAwesomeIcon
                 icon={faLineChart}
                 className="text-slate-300 pb-4 h-[4rem]"
@@ -413,7 +413,7 @@ export default function Home() {
               </ul>
             </li>
 
-            <li className="w-full  mb-4 bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
+            <li className="w-full  mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
               <FontAwesomeIcon
                 icon={faWater}
                 className="text-slate-300 pb-4 h-[4rem]"
@@ -457,7 +457,7 @@ export default function Home() {
               </ul>
             </li>
 
-            <li className="w-full  mb-4 bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
+            <li className="w-full  mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
               <FontAwesomeIcon
                 icon={faShieldHalved}
                 className="text-slate-300 pb-4 h-[4rem]"
@@ -468,7 +468,7 @@ export default function Home() {
               <p>
                 UPPA anti-phishing is a web browser extension designed to
                 protect Université de Pau webmail users from phishing mails.
-                Attacks being very predictable, the extension is able to detect
+                Attacks being predictables, the extension is able to detect
                 malicious links, sanitize them and display an informative
                 message to the user.
               </p>
