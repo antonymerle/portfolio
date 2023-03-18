@@ -463,14 +463,14 @@ export default function Home() {
                 className="text-slate-300 pb-4 h-[4rem]"
               />
               <h3 className="text-3xl font-bold pb-4">
-                anti-phishing browser extension
+                PHISHEYE BROWSER EXTENSION
               </h3>
               <p>
-                UPPA anti-phishing is a web browser extension designed to
-                protect Université de Pau webmail users from phishing mails.
-                Attacks being predictables, the extension is able to detect
-                malicious links, sanitize them and display an informative
-                message to the user.
+                PhishEye is a web browser extension designed to protect
+                Université de Pau webmail users from phishing mails. Attacks
+                being predictables, the extension is able to detect malicious
+                links, sanitize them and display an informative message to the
+                user.
               </p>
               <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
                 <li>
@@ -565,7 +565,7 @@ export default function Home() {
             </li>
           </a>{" "}
           <a href="https://twitter.com/AntonyMerleDev" target="blank">
-            <li className="border-2 border-slate-100 p-6 rounded-full transition-colors duration-300 ease-in hover:bg-slate-600">
+            <li className="border-2 border-slate-100 p-6 rounded-full transition-colors duration-300 ease-in hover:bg-slate-600 ">
               <FontAwesomeIcon icon={faTwitter} style={{ height: "33px" }} />
             </li>
           </a>
