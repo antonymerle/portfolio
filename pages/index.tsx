@@ -18,6 +18,7 @@ import jellyfish from "../public/jellyfish.png";
 import istexUPPA from "../public/istex-uppa.jpg";
 import istexUPPA2 from "../public/istex-uppa2.jpg";
 import kanban from "../public/kanban.jpg";
+import wordle from "../public/wordle.jpg";
 import logo from "../public/logo.jpg";
 import logoFullSize from "../public/logo.png";
 import pp from "../public/antony-merle.jpg";
@@ -184,7 +185,7 @@ export default function Home() {
                     src={istexUPPA2}
                     width={800}
                     height={450}
-                    alt="antony merle picture"
+                    alt="istex uppa screencap"
                     className="opacity-40 -z-1" // change that when hover
                   />
 
@@ -242,7 +243,7 @@ export default function Home() {
                     src={kanban}
                     width={710}
                     height={450}
-                    alt="antony merle picture"
+                    alt="kanban screencap"
                     className="opacity-40 -z-1" // change that when hover
                   />
 
@@ -297,8 +298,10 @@ export default function Home() {
                 <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:bg-mint md:min-w-[600px] md:z-10 ">
                   {/* TODO : replace css bg by optimzed image  */}
                   <Image
-                    src={jellyfish}
-                    alt="antony merle picture"
+                    src={wordle}
+                    width={800}
+                    height={583}
+                    alt="wordle screencap"
                     className="opacity-40 -z-1" // change that when hover
                   />
 
@@ -306,34 +309,44 @@ export default function Home() {
                 </div>
                 <div className="absolute top-0 left-0 project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20">
                   <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-9 md:col-end-13 md:row-span-1 md:text-right">
-                    JellyFish
+                    Wordle
                   </h3>
                   <p className="text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-right p-4 md:col-start-7 md:col-end-13">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                    molestiae earum, provident corrupti iste dolorum maiores
-                    quisquam repellendus in similique dicta veritatis eius
-                    expedita labore incidunt laborum ex deserunt porro.
+                    Wordle is a popular online word game where the player has to
+                    guess a five-letter word in a limited number of attempts.
                   </p>
                   <ul className="project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-end">
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                    <li>React</li>
-                    <li>NodeJS</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
                   </ul>
                   <ul className="project-code-live flex justify-center  space-x-2 py-4 md:justify-end">
                     <li>
-                      <FontAwesomeIcon
-                        icon={faGithubAlt}
-                        className="text-slate-300"
-                        style={{ height: "20px" }}
-                      />
+                      <a
+                        href="https://github.com/antonymerle/wordle"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faGithubAlt}
+                          className="text-slate-300"
+                          style={{ height: "20px" }}
+                        />
+                      </a>
                     </li>
+
                     <li>
-                      <FontAwesomeIcon
-                        icon={faRightFromBracket}
-                        style={{ height: "20px" }}
-                        className="text-slate-300"
-                      />
+                      <a
+                        href="https://wordle-bay-one.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faRightFromBracket}
+                          style={{ height: "20px" }}
+                          className="text-slate-300"
+                        />
+                      </a>
                     </li>
                   </ul>
                 </div>
