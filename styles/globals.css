@@ -19,7 +19,39 @@
 
 .animate-slide-in {
   animation-name: slide-in;
-  animation-duration: 1s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-6rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation-name: slide-down;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(6rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation-name: slide-up;
+  animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }

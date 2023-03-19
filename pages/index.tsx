@@ -29,6 +29,7 @@ import pp from "../public/antony-merle.jpg";
 import Link from "next/link";
 
 import { useEffect, useRef } from "react";
+import CallToAction from "@/components/CallToAction";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -390,10 +391,10 @@ export default function Home() {
 
           <ul
             ref={ref}
-            className="my-element
-          flex md:flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 lg:flex-row lg:w-2/3"
+            className="
+          flex flex-col md:flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 lg:flex-row lg:w-2/3"
           >
-            <li className="w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
+            <li className="my-element w-full mb-4 bg-slate-700 transition ease-in hover:-translate-y-2 hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
               <FontAwesomeIcon
                 icon={faLineChart}
                 className="text-slate-300 pb-4 h-[4rem]"
@@ -438,7 +439,7 @@ export default function Home() {
               </ul>
             </li>
 
-            <li className="w-full  mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
+            <li className="my-element w-full  mb-4 bg-slate-700 transition ease-in hover:-translate-y-2 hover:bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
               <FontAwesomeIcon
                 icon={faWater}
                 className="text-slate-300 pb-4 h-[4rem]"
@@ -482,7 +483,7 @@ export default function Home() {
               </ul>
             </li>
 
-            <li className="w-full  mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
+            <li className="my-element  w-full  mb-4 bg-slate-700 transition ease-in hover:-translate-y-2  hover:bg-slate-600 p-12 md:w-full md:mr-4 rounded-md">
               <FontAwesomeIcon
                 icon={faShieldHalved}
                 className="text-slate-300 pb-4 h-[4rem]"
@@ -536,10 +537,10 @@ export default function Home() {
           className="w-full h-screen flex flex-col items-center justify-start px-4 bg-slate-50"
         >
           <div className="flex flex-col justify-end space-y-6 mb-12 h-3/5 max-w-[768px] text-slate-600">
-            <h2 className="text-4xl font-bold  md:text-6xl text-center">
-              Let's build something great{" "}
-              <span className="text-mint">together</span>{" "}
-            </h2>
+            <CallToAction
+              mainTitle={"Let's build something great"}
+              secondaryTitle={"together"}
+            />
             <p className="max-w-md mx-auto text-center">
               I'd love to hear about your opportunities. Let's connect and see
               how I can contribute.
