@@ -30,6 +30,7 @@ import Link from "next/link";
 
 import { useEffect, useRef } from "react";
 import CallToAction from "@/components/CallToAction";
+import Button from "@/components/Button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -547,13 +548,19 @@ export default function Home() {
             </p>
           </div>
           <div className="bottom h-2/5">
-            <button
+            <Button
+              text={"Say hi"}
+              mainColor={"slate-50"}
+              secondaryColor={"slate-600"}
+              hoverColor={"mintTransparent"}
+            />
+            {/* <button
               className="border py-5 px-12 border-slate-600 text-slate-600 
           leading-4 rounded-md 
           transition ease-in  bg-slate-50 hover:bg-mintTransparent"
             >
               Say Hi !
-            </button>
+            </button> */}
           </div>
         </section>
       </main>
