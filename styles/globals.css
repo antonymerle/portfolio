@@ -7,3 +7,19 @@
   padding: 0;
   margin: 0;
 } */
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-6rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}

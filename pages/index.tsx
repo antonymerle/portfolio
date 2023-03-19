@@ -28,12 +28,33 @@ import logoFullSize from "../public/logo.png";
 import pp from "../public/antony-merle.jpg";
 import Link from "next/link";
 
+import { useEffect, useRef } from "react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const plusBullet = (
     <FontAwesomeIcon icon={faPlus} style={{ height: "10px" }} />
   );
+
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-slide-in");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    observer.observe(ref.current as any);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className="bg-slate-800 font-sans w-full">
@@ -367,7 +388,11 @@ export default function Home() {
             Other significants projects
           </h2>
 
-          <ul className="flex md:flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 lg:flex-row lg:w-2/3">
+          <ul
+            ref={ref}
+            className="my-element
+          flex md:flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 lg:flex-row lg:w-2/3"
+          >
             <li className="w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
               <FontAwesomeIcon
                 icon={faLineChart}
