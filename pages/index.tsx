@@ -70,9 +70,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="relative container mx-auto p-6 ">
+      <header className="w-full relative   px-64 py-6 bg-gradient-to-b from-slate-900 to-slate-800 ">
         <nav className="flex items-center justify-between">
-          <Image src={logo} alt="logo" width={80} height={80} />
+          <Image
+            src={logo}
+            alt="logo"
+            width={80}
+            height={80}
+            className="rounded-full border-2 border-mint hover:scale-105 duration-300"
+          />
           {/* Menu items */}
           <ol className="hidden md:flex justify-between items-center space-x-6 text-mint  ">
             <li className="flex">About</li>
