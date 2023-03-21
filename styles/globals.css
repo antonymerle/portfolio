@@ -55,3 +55,14 @@
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+
+#tsparticles {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}

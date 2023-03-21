@@ -31,6 +31,7 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 import CallToAction from "@/components/CallToAction";
 import Button from "@/components/Button";
+import Graph from "@/components/Graph";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -86,7 +87,8 @@ export default function Home() {
           id="welcome"
           className="h-screen flex flex-col justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300  md:px-24 md:text-left lg:px-64"
         >
-          <div className="flex flex-col justify-start space-y-4 container mx-auto">
+          <Graph />
+          <div className="flex flex-col justify-start space-y-4 container mx-auto z-10">
             <h1 className="flex flex-col mt-28 space-y-4  text-xl font-bold  md:text-6xl">
               <span className="text-sm text-mint">Hi, my name is </span>
               <span className="text-slate-50">Antony Merle.</span>
@@ -101,6 +103,8 @@ export default function Home() {
               continual learning, I am committed to delivering high-quality and
               innovative solutions.
             </p>
+            {/* <div className="w-full h-96 relative bg-mint">
+            </div> */}
           </div>
         </section>
 
