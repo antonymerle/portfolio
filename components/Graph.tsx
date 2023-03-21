@@ -13,6 +13,7 @@ const Graph = () => {
     // starting from v2 you can add only the features you need reducing the bundle size
     // await loadFull(engine);
     await loadLinksPreset(engine);
+    await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(
@@ -59,6 +60,32 @@ const Graph = () => {
     <Particles
       options={{
         fullScreen: { enable: false },
+        background: {
+          color: { value: "#1E293B" },
+        },
+        fpsLimit: 120,
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
+          },
+          modes: {
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+          },
+        },
         preset: "links",
         particles: {
           number: {
@@ -68,9 +95,6 @@ const Graph = () => {
               value_area: 800,
             },
           },
-        },
-        background: {
-          color: { value: "#1E293B" },
         },
       }}
       init={particlesInit}
