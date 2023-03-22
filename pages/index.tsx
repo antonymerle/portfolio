@@ -118,7 +118,7 @@ export default function Home() {
         <section id="about" className="h-max w-full py-24 px-6 bg-slate-50">
           <div
             id="about-container"
-            className="h-max max-w-[900px] mx-auto bg-slate-100"
+            className="h-max max-w-[900px] mx-auto p-12 bg-slate-100 "
           >
             <div
               id="about-header"
