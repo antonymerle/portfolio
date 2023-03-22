@@ -80,11 +80,11 @@ export default function Home() {
             className="rounded-full border-2 border-mint hover:scale-105 duration-300"
           />
           {/* Menu items */}
-          <ol className="hidden md:flex justify-between items-center space-x-6 text-mint  ">
-            <li className="flex">About</li>
-            <li className="flex">Projects</li>
-            <li className="flex">Contact</li>
-            <li className="flex">Resume</li>
+          <ol className="hidden md:flex justify-between items-center space-x-6 text-md text-mint  ">
+            <li className="flex  hover:text-slate-300">About</li>
+            <li className="flex  hover:text-slate-300">Projects</li>
+            <li className="flex  hover:text-slate-300">Contact</li>
+            <li className="flex  hover:text-slate-300">Resume</li>
           </ol>
         </nav>
       </header>
@@ -96,7 +96,7 @@ export default function Home() {
           <Graph />
           <div className="flex flex-col justify-start space-y-4 container mx-auto z-10">
             <h1 className="flex flex-col mt-28 space-y-4  text-xl font-bold  md:text-6xl">
-              <span className="text-sm text-mint">Hi, my name is </span>
+              <span className="text-xl text-mint">Hi, my name is </span>
               <span className="text-slate-50">Antony Merle.</span>
               <span>I build apps for today's Internet.</span>
             </h1>
