@@ -70,7 +70,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="w-full relative   px-64 py-6 bg-gradient-to-b from-slate-900 to-slate-800 ">
+      <header className="w-full relative px-64 py-6 bg-gradient-to-b from-slate-900 to-slate-800 ">
         <nav className="flex items-center justify-between">
           <Image
             src={logo}
@@ -95,7 +95,7 @@ export default function Home() {
         >
           <Graph />
           <div className="flex flex-col justify-start space-y-4 container mx-auto z-10">
-            <h1 className="flex flex-col mt-28 space-y-4  text-xl font-bold  md:text-6xl">
+            <h1 className="flex flex-col mt-44 space-y-4  text-xl font-bold  md:text-6xl">
               <span className="text-xl text-mint">Hi, my name is </span>
               <span className="text-slate-50">Antony Merle.</span>
               <span>I build apps for today's Internet.</span>
@@ -115,16 +115,19 @@ export default function Home() {
         </section>
 
         {/* ABOUT */}
-        <section id="about" className="h-max w-full py-24 px-6 bg-slate-50">
+        <section
+          id="about"
+          className="h-max md:h-screen w-full pt-44  px-6 bg-slate-50"
+        >
           <div
             id="about-container"
-            className="h-max max-w-[900px] mx-auto p-12 bg-slate-100 "
+            className="h-4/5 max-w-[900px] mx-auto px-12 pt-24 bg-slate-100 "
           >
             <div
               id="about-header"
               className="w-full flex flex-row justify-center items-center md:justify-start"
             >
-              <h2 className="space-x-2  text-xl font-bold  md:text-4xl">
+              <h2 className="space-x-2  text-xl font-bold pb-6  md:text-4xl">
                 <span className="text-lg text-mint">01.</span>
                 <span>About me</span>
               </h2>
@@ -135,7 +138,7 @@ export default function Home() {
               className="flex flex-col container md:h-auto md:grid md:gap-4 md:grid-cols-[2fr_1fr] md:grid-rows-2"
             >
               <div id="about-text" className="text-center md:text-left">
-                <p>
+                <p className="pb-6">
                   I live in the Basque Country, southwest of France. I am a
                   father of three. Since the beginning of my programming journey
                   in 2017, I worked for the public sector, as head of IT for the
@@ -146,8 +149,8 @@ export default function Home() {
                   business intelligence, automatize repetitive task, help
                   student to get online services, etc. In 2023, I gratuaded at
                   La Capsule bootcamp, worked on board.lease, a peer to peer
-                  surfoard renting mobile-first website. I am now open to work.
-                  Here are some details about my stack :
+                  surfoard renting mobile-first website. I am currently open to
+                  work. Here are some details about my stack :
                 </p>
                 {/* bloc compétences */}
                 <ul className="grid grid-cols-2 grid-rows-3 flex-wrap h-20 my-4 text-sm">
