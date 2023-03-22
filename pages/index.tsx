@@ -32,6 +32,7 @@ import { useEffect, useRef } from "react";
 import CallToAction from "@/components/CallToAction";
 import Button from "@/components/Button";
 import Graph from "@/components/Graph";
+import Project from "@/components/Project";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -218,179 +219,56 @@ export default function Home() {
             <ul className="space-y-44">
               {/* SHOWCASE PROJECT 1 */}
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
-              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:min-w-[600px] md:z-10 ">
-                  {/* TODO : replace css bg by optimzed image  */}
-                  <Image
-                    src={istexUPPA2}
-                    width={800}
-                    height={450}
-                    alt="istex uppa screencap"
-                    className="-z-1" // change that when hover
-                  />
+              <Project
+                projectImage={{
+                  imageImport: istexUPPA2,
+                  width: 800,
+                  height: 450,
+                  imageAlt: "istex uppa screencap",
+                }}
+                title="ISTEX-UPPA"
+                description=" A search engine frontend to the ISTEX database : explore
+                    scientific research through 27
+                    millions articles."
+                stack={["TypeScript", "Angular", "rxjs"]}
+                repoURL="https://github.com/antonymerle/istex-uppa"
+                liveURL="https://istex-uppa.herokuapp.com/"
+                justify="left"
+              />
 
-                  {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
-                </div>
-                <div className="absolute top-0 left-0 project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20">
-                  <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-9 md:col-end-13 md:row-span-1 md:text-right">
-                    ISTEX-UPPA
-                  </h3>
-                  <p className="text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-right p-4 md:col-start-7 md:col-end-13">
-                    A search engine frontend to the ISTEX database : explore
-                    scientific, technical and medical research through 27
-                    millions articles.
-                  </p>
-                  <ul className="project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-end">
-                    <li>TypeScript</li>
-                    <li>Angular</li>
-                    <li>rxjs</li>
-                  </ul>
-                  <ul className="project-code-live flex justify-center  space-x-2 py-4 md:justify-end">
-                    <li>
-                      <a
-                        href="https://github.com/antonymerle/istex-uppa"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faGithubAlt}
-                          className="text-slate-300"
-                          style={{ height: "20px" }}
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://istex-uppa.herokuapp.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faRightFromBracket}
-                          style={{ height: "20px" }}
-                          className="text-slate-300"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
               {/* SHOWCASE PROJECT 2 */}
-              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-5 md:col-end-13 md:row-span-full  md:min-w-[600px] md:z-10 ">
-                  {/* TODO : replace css bg by optimzed image  */}
-                  <Image
-                    src={kanban}
-                    width={710}
-                    height={450}
-                    alt="kanban screencap"
-                    className=" -z-1" // change that when hover
-                  />
+              <Project
+                projectImage={{
+                  imageImport: kanban,
+                  width: 710,
+                  height: 450,
+                  imageAlt: "kanban screencap",
+                }}
+                title="Kanban"
+                description="A kanban board that let you manage tasks efficiently by
+              draging and dropping items from one column to another."
+                stack={["NodeJS", "Express", "Socket.io", "React"]}
+                repoURL="https://github.com/antonymerle/kanban-backend"
+                liveURL="https://kanban-frontend.herokuapp.com/"
+                justify="right"
+              />
 
-                  {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
-                </div>
-                <div className="absolute top-0 left-0 project-description md:col-start-1 md:col-end-7 md:row-span-full md:z-20">
-                  <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-1 md:col-end-4 md:row-span-1 md:text-left">
-                    Kanban
-                  </h3>
-                  <p className="text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-left p-4 md:col-start-1 md:col-end-6">
-                    A kanban board that let you manage tasks efficiently by
-                    draging and dropping items from one column to another.
-                  </p>
-                  <ul className="project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-start">
-                    <li>NodeJS</li>
-                    <li>Express</li>
-                    <li>Socket.io</li>
-                    <li>React</li>
-                  </ul>
-                  <ul className="project-code-live flex justify-center  space-x-2 py-4 md:justify-start">
-                    <li>
-                      <a
-                        href="https://github.com/antonymerle/kanban-backend"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faGithubAlt}
-                          className="text-slate-300"
-                          style={{ height: "20px" }}
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://kanban-frontend.herokuapp.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faRightFromBracket}
-                          style={{ height: "20px" }}
-                          className="text-slate-300"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
               {/* SHOWCASE PROJECT 3 */}
-              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full  md:min-w-[600px] md:z-10 ">
-                  {/* TODO : replace css bg by optimzed image  */}
-                  <Image
-                    src={wordle}
-                    width={800}
-                    height={583}
-                    alt="wordle screencap"
-                    className="-z-1" // change that when hover
-                  />
-
-                  {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
-                </div>
-                <div className="absolute top-0 left-0 project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20">
-                  <h3 className="py-8 text-slate-300 text-2xl font-bold md:col-start-9 md:col-end-13 md:row-span-1 md:text-right">
-                    Wordle
-                  </h3>
-                  <p className="text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-right p-4 md:col-start-7 md:col-end-13">
-                    Wordle is a popular online word game where the player has to
-                    guess a five-letter word in a limited number of attempts.
-                  </p>
-                  <ul className="project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-end">
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                  </ul>
-                  <ul className="project-code-live flex justify-center  space-x-2 py-4 md:justify-end">
-                    <li>
-                      <a
-                        href="https://github.com/antonymerle/wordle"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faGithubAlt}
-                          className="text-slate-300"
-                          style={{ height: "20px" }}
-                        />
-                      </a>
-                    </li>
-
-                    <li>
-                      <a
-                        href="https://wordle-bay-one.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FontAwesomeIcon
-                          icon={faRightFromBracket}
-                          style={{ height: "20px" }}
-                          className="text-slate-300"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
+              <Project
+                title="Wordle"
+                projectImage={{
+                  imageImport: wordle,
+                  width: 800,
+                  height: 583,
+                  imageAlt: "wordle screencap",
+                }}
+                description="Wordle is a popular online word game where the player has to
+              guess a five-letter word in a limited number of attempts."
+                stack={["JavaScript", "HTML", "CSS"]}
+                repoURL="https://github.com/antonymerle/wordle"
+                liveURL="https://wordle-bay-one.vercel.app/"
+                justify="left"
+              />
             </ul>
           </div>
         </section>
