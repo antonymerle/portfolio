@@ -76,8 +76,8 @@ const Project: React.FC<Props> = ({
             justify === "right" ? "start" : "end"
           }`}
         >
-          {stack.map((s) => (
-            <li>{s}</li>
+          {stack.map((s, i) => (
+            <li key={i}>{s}</li>
           ))}
         </ul>
         <ul
