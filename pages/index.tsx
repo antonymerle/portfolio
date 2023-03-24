@@ -32,6 +32,7 @@ import { useEffect, useRef } from "react";
 import CallToAction from "@/components/CallToAction";
 import Button from "@/components/Button";
 import Graph from "@/components/Graph";
+import Project from "@/components/Project";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -216,6 +217,23 @@ export default function Home() {
               </h2>
             </div>
             <ul className="space-y-44">
+              <Project
+                title="ISTEX-UPPA"
+                description=" A search engine frontend to the ISTEX database : explore
+                    scientific, technical and medical research through 27
+                    millions articles."
+                justify="left"
+                repoURL="https://github.com/antonymerle/istex-uppa"
+                liveURL="https://istex-uppa.herokuapp.com/"
+                projectImage={{
+                  imageImport: istexUPPA2,
+                  height: 450,
+                  width: 800,
+                  imageAlt: "istex uppa screencap",
+                }}
+                stack={["TypeScript", "Angular", "rxjs"]}
+              />
+
               {/* SHOWCASE PROJECT 1 */}
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
               <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
