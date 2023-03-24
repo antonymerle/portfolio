@@ -26,7 +26,7 @@ const Project: React.FC<Props> = ({
   stack,
   repoURL,
   liveURL,
-  justify = "left",
+  justify,
 }) => {
   return (
     <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
