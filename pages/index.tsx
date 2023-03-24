@@ -218,6 +218,7 @@ export default function Home() {
             </div>
             <ul className="space-y-44">
               {/* SHOWCASE PROJECT 1 */}
+<<<<<<< HEAD
               {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
               <Project
                 projectImage={{
@@ -234,16 +235,43 @@ export default function Home() {
                 repoURL="https://github.com/antonymerle/istex-uppa"
                 liveURL="https://istex-uppa.herokuapp.com/"
                 justify="left"
+=======
+              <Project
+                title="ISTEX-UPPA"
+                description=" A search engine frontend to the ISTEX database : explore
+                    scientific, technical and medical research through 27
+                    millions articles."
+                justify="left"
+                repoURL="https://github.com/antonymerle/istex-uppa"
+                liveURL="https://istex-uppa.herokuapp.com/"
+                projectImage={{
+                  imageImport: istexUPPA2,
+                  height: 450,
+                  width: 800,
+                  imageAlt: "istex uppa screencap",
+                }}
+                stack={["TypeScript", "Angular", "rxjs"]}
+>>>>>>> projects-debug
               />
 
               {/* SHOWCASE PROJECT 2 */}
               <Project
+<<<<<<< HEAD
+=======
+                title="Kanban"
+                description="A kanban board that let you manage tasks efficiently by
+                draging and dropping items from one column to another."
+                justify="right"
+                repoURL="https://github.com/antonymerle/kanban-backend"
+                liveURL="https://kanban-frontend.herokuapp.com/"
+>>>>>>> projects-debug
                 projectImage={{
                   imageImport: kanban,
                   width: 710,
                   height: 450,
                   imageAlt: "kanban screencap",
                 }}
+<<<<<<< HEAD
                 title="Kanban"
                 description="A kanban board that let you manage tasks efficiently by
               draging and dropping items from one column to another."
@@ -251,23 +279,38 @@ export default function Home() {
                 repoURL="https://github.com/antonymerle/kanban-backend"
                 liveURL="https://kanban-frontend.herokuapp.com/"
                 justify="right"
+=======
+                stack={["NodeJS", "Express", "Socket.io", "React"]}
+>>>>>>> projects-debug
               />
 
               {/* SHOWCASE PROJECT 3 */}
               <Project
                 title="Wordle"
+<<<<<<< HEAD
+=======
+                description="Wordle is a popular online word game where the player has to
+                guess a five-letter word in a limited number of attempts."
+                justify="left"
+                repoURL="https://github.com/antonymerle/wordle"
+                liveURL="https://wordle-bay-one.vercel.app/"
+>>>>>>> projects-debug
                 projectImage={{
                   imageImport: wordle,
                   width: 800,
                   height: 583,
                   imageAlt: "wordle screencap",
                 }}
+<<<<<<< HEAD
                 description="Wordle is a popular online word game where the player has to
               guess a five-letter word in a limited number of attempts."
                 stack={["JavaScript", "HTML", "CSS"]}
                 repoURL="https://github.com/antonymerle/wordle"
                 liveURL="https://wordle-bay-one.vercel.app/"
                 justify="left"
+=======
+                stack={["JavaScript", "HTML", "CSS"]}
+>>>>>>> projects-debug
               />
             </ul>
           </div>
