@@ -203,74 +203,56 @@ export default function Home() {
           id="projects"
           className="h-max flex w-3/4 flex-col justify-start space-y-4 mb-48 pt-24 px-6  bg-slate-800 text-center text-slate-300  md:px-24 md:text-left lg:px-32"
         >
-          <div
+          {/* <div
             id="projects-container"
             className="flex flex-col items-start h-full w-full max-w-[900px]"
-          >
-            <div
-              id="projects-header"
-              className="w-full flex flex-row justify-center items-center md:justify-start"
-            >
-              <h2 className="space-x-2 py-6 text-xl font-bold  md:text-4xl">
-                <span className="text-lg text-mint">02.</span>
-                <span>Projects I built</span>
-              </h2>
+          > */}
+          <div className="showcase">
+            <div className="thumbnail thumbnail--awesome">
+              <div className="thumbnail__overlay">
+                <a className="btn" href="#0">
+                  DETAILS
+                </a>
+              </div>
             </div>
-            <ul className="space-y-44">
-              {/* SHOWCASE PROJECT 1 */}
-              {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
-              <Project
-                projectImage={{
-                  imageImport: istexUPPA2,
-                  width: 800,
-                  height: 450,
-                  imageAlt: "istex uppa screencap",
-                }}
-                title="ISTEX-UPPA"
-                description=" A search engine frontend to the ISTEX database : explore
-                    scientific research through 27
-                    millions articles."
-                stack={["TypeScript", "Angular", "rxjs"]}
-                repoURL="https://github.com/antonymerle/istex-uppa"
-                liveURL="https://istex-uppa.herokuapp.com/"
-                justify="left"
-              />
-
-              {/* SHOWCASE PROJECT 2 */}
-              <Project
-                projectImage={{
-                  imageImport: kanban,
-                  width: 710,
-                  height: 450,
-                  imageAlt: "kanban screencap",
-                }}
-                title="Kanban"
-                description="A kanban board that let you manage tasks efficiently by
-              draging and dropping items from one column to another."
-                stack={["NodeJS", "Express", "Socket.io", "React"]}
-                repoURL="https://github.com/antonymerle/kanban-backend"
-                liveURL="https://kanban-frontend.herokuapp.com/"
-                justify="right"
-              />
-
-              {/* SHOWCASE PROJECT 3 */}
-              <Project
-                title="Wordle"
-                projectImage={{
-                  imageImport: wordle,
-                  width: 800,
-                  height: 583,
-                  imageAlt: "wordle screencap",
-                }}
-                description="Wordle is a popular online word game where the player has to
-              guess a five-letter word in a limited number of attempts."
-                stack={["JavaScript", "HTML", "CSS"]}
-                repoURL="https://github.com/antonymerle/wordle"
-                liveURL="https://wordle-bay-one.vercel.app/"
-                justify="left"
-              />
-            </ul>
+            <div className="desc">
+              <p>Case Study</p>
+              <h2>Awesome Project</h2>
+              <p>This project is awesome!</p>
+            </div>
           </div>
+          <div className="showcase">
+            <div className="thumbnail">
+              <div className="thumbnail__overlay">
+                <a className="btn" href="#0">
+                  DETAILS
+                </a>
+              </div>
+            </div>
+            <div className="desc">
+              <p>Case Study</p>
+              <h2>Awesome Project 2</h2>
+              <p>This project is even more awesome!</p>
+            </div>
+          </div>
+          <div className="showcase showcase--inverted">
+            <div className="desc">
+              <p>Case Study</p>
+              <h2>Inverted Project</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut l
+              </p>
+            </div>
+            <div className="thumbnail">
+              <div className="thumbnail__overlay">
+                <a className="btn" href="#0">
+                  DETAILS
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* </div> */}
         </section>
         {/* OTHER SIGNIFICANTS PROJECTS */}
         <section
