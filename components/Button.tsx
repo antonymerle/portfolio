@@ -32,12 +32,19 @@ const Button: React.FC<Props> = ({
     };
   }, []);
 
+  const buttonConfig = {
+    bgColor: "bg-slate-50",
+    color: "text-slate-600",
+    outline: "border-slate-600",
+    hover: "hover:bg-mintTransparent",
+  };
+
   return (
     <button
       ref={ref}
-      className={`border py-5 px-12 border-${secondaryColor} text-${secondaryColor} 
+      className={`border py-5 px-12 ${buttonConfig.outline} ${buttonConfig.color} 
 leading-4 rounded-md 
-transition ease-in  bg-${mainColor} hover:bg-${hoverColor}`}
+transition ease-in  ${buttonConfig.bgColor} ${buttonConfig.hover}`}
     >
       {text}
     </button>
