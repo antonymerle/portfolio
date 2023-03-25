@@ -48,6 +48,7 @@ const Project: React.FC<Props> = ({
   }, []);
 
   const justifyLookupTable = {
+    absPos: justify === "right" ? "md:ml-64" : null,
     stackJustification:
       justify === "right" ? "md:justify-start" : "md:justify-end",
   };
@@ -55,7 +56,7 @@ const Project: React.FC<Props> = ({
   return (
     <li
       ref={ref}
-      className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden"
+      className={`${justifyLookupTable.absPos} relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden`}
     >
       <div
         className={`col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-${
