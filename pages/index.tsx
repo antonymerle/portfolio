@@ -96,7 +96,11 @@ export default function Home() {
         >
           <Graph />
           <div className="flex flex-col justify-start space-y-4 container mx-auto z-10">
-            <h1 className="flex flex-col mt-44 space-y-4  text-xl font-bold  md:text-6xl">
+            <h1
+              className="bg-gradient-to-r
+               from-pink-400   to-orange-300 text-transparent bg-clip-text
+             flex flex-col mt-44 space-y-4  text-xl font-bold  md:text-6xl"
+            >
               <span className="text-xl text-mint">Hi, my name is </span>
               <span className="text-slate-50">Antony Merle.</span>
               <span>I build apps for today's Internet.</span>
@@ -126,7 +130,7 @@ export default function Home() {
           >
             <div
               id="about-header"
-              className="w-full flex flex-row justify-center items-center md:justify-start"
+              className="w-full flex flex-row justify-center items-center md:justify-start text-slate-700"
             >
               <h2 className="space-x-2  text-xl font-bold pb-6  md:text-4xl">
                 <span className="text-lg text-mint">01.</span>
@@ -337,7 +341,10 @@ export default function Home() {
                 icon={faLineChart}
                 className="text-slate-300 pb-4 h-[4rem]"
               />
-              <h3 className="text-xl font-bold pb-4 lg:text-3xl">
+              <h3
+                className="text-xl font-bold pb-4 lg:text-3xl text-slate-300 
+              "
+              >
                 SISE ANALYTICS
               </h3>
               <p>
@@ -382,7 +389,12 @@ export default function Home() {
                 icon={faWater}
                 className="text-slate-300 pb-4 h-[4rem]"
               />
-              <h3 className="text-3xl font-bold pb-4">BOARD.LEASE</h3>
+              <h3
+                className="
+                text-slate-300 text-3xl font-bold pb-4"
+              >
+                BOARD.LEASE
+              </h3>
               <p>
                 Board.lease is a platform made by surfers for surfers. On
                 board.lease, you can rent your board on your future holiday
@@ -426,7 +438,7 @@ export default function Home() {
                 icon={faShieldHalved}
                 className="text-slate-300 pb-4 h-[4rem]"
               />
-              <h3 className="text-3xl font-bold pb-4">
+              <h3 className="text-slate-300 text-3xl font-bold pb-4">
                 PHISHEYE BROWSER EXTENSION
               </h3>
               <p>
@@ -472,7 +484,9 @@ export default function Home() {
         {/* CONTACT SECTION */}
         <section
           id="contact"
-          className="w-full h-screen flex flex-col items-center justify-start px-4 bg-slate-50"
+          className="
+          bg-gradient-to-r from-pink-400   to-orange-300 
+          w-full h-screen flex flex-col items-center justify-start px-4"
         >
           <div className="flex flex-col justify-end space-y-6 mb-12 h-3/5 max-w-[768px] text-slate-600">
             <CallToAction
@@ -487,9 +501,9 @@ export default function Home() {
           <div className="bottom h-2/5">
             <Button
               text={"Say hi"}
-              mainColor={"slate-50"}
-              secondaryColor={"slate-600"}
-              hoverColor={"mintTransparent"}
+              mainColor="bg-slate-50"
+              secondaryColor="border-slate-600"
+              hoverColor="hover:bg-mintTransparent"
             />
           </div>
         </section>
