@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
@@ -26,10 +26,37 @@ const Project: React.FC<Props> = ({
   stack,
   repoURL,
   liveURL,
-  justify = "left",
+  justify,
 }) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-slide-in");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    observer.observe(ref.current as any);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const justifyLookupTable = {
+    stackJustification:
+      justify === "right" ? "md:justify-start" : "md:justify-end",
+  };
+
   return (
-    <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
+    <li
+      ref={ref}
+      className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden"
+    >
       <div
         className={`col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-${
           justify === "right" ? "5" : "1"
@@ -44,6 +71,7 @@ const Project: React.FC<Props> = ({
           height={projectImage.height}
           alt={projectImage.imageAlt}
           className="-z-1" // change that when hover
+          priority={true}
         />
 
         {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
@@ -81,9 +109,7 @@ const Project: React.FC<Props> = ({
           ))}
         </ul>
         <ul
-          className={`project-code-live flex justify-center  space-x-2 py-4 md:justify-${
-            justify === "right" ? "start" : "end"
-          }`}
+          className={`project-code-live flex justify-center  space-x-2 py-4 ${justifyLookupTable.stackJustification}`}
         >
           <li>
             <a href={repoURL} target="_blank" rel="noopener noreferrer">

@@ -233,12 +233,11 @@ export default function Home() {
                 }}
                 stack={["TypeScript", "Angular", "rxjs"]}
               />
-
               <Project
                 title="Kanban"
                 description="A kanban board that let you manage tasks efficiently by
                 draging and dropping items from one column to another."
-                justify="left"
+                justify="right"
                 repoURL="https://github.com/antonymerle/kanban-backend"
                 liveURL="https://kanban-frontend.herokuapp.com/"
                 projectImage={{
@@ -254,7 +253,7 @@ export default function Home() {
                 title="Wordle"
                 description="Wordle is a popular online word game where the player has to
                 guess a five-letter word in a limited number of attempts."
-                justify="right"
+                justify="left"
                 repoURL="https://github.com/antonymerle/wordle"
                 liveURL="https://wordle-bay-one.vercel.app/"
                 projectImage={{
@@ -265,6 +264,57 @@ export default function Home() {
                 }}
                 stack={["JavaScript", "HTML", "CSS"]}
               />
+            </ul>
+            <ul className="hidden">
+              {/* SHOWCASE PROJECT 1 */}
+              {/* 1 ligne, 12 col. Image left 8 span 8 project card overflow 7/13 */}
+              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
+                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:min-w-[600px] md:z-10 ">
+                  {/* TODO : replace css bg by optimzed image  */}
+                  {/* <Image
+                    src={istexUPPA2}
+                    width={800}
+                    height={450}
+                    alt="istex uppa screencap"
+                    className="-z-1" // change that when hover
+                  /> */}
+
+                  {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
+                </div>
+                <div className="absolute top-0 left-0 project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20"></div>
+              </li>
+              {/* SHOWCASE PROJECT 2 */}
+              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
+                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-5 md:col-end-13 md:row-span-full  md:min-w-[600px] md:z-10 ">
+                  {/* TODO : replace css bg by optimzed image  */}
+                  {/* <Image
+                    src={kanban}
+                    width={710}
+                    height={450}
+                    alt="kanban screencap"
+                    className=" -z-1" // change that when hover
+                  /> */}
+
+                  {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
+                </div>
+                <div className="absolute top-0 left-0 project-description md:col-start-1 md:col-end-7 md:row-span-full md:z-20"></div>
+              </li>
+              {/* SHOWCASE PROJECT 3 */}
+              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
+                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full  md:min-w-[600px] md:z-10 ">
+                  {/* TODO : replace css bg by optimzed image  */}
+                  {/* <Image
+                    src={wordle}
+                    width={800}
+                    height={583}
+                    alt="wordle screencap"
+                    className="-z-1" // change that when hover
+                  /> */}
+
+                  {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
+                </div>
+                <div className="absolute top-0 left-0 project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20"></div>
+              </li>
             </ul>
           </div>
         </section>
