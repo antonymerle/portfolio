@@ -2,17 +2,13 @@ import { useRef, useEffect } from "react";
 
 interface Props {
   text: String;
-  mainColor: String;
-  secondaryColor: String;
-  hoverColor: String;
+  bgColor: String;
+  color: String;
+  outline: String;
+  hover: String;
 }
 
-const Button: React.FC<Props> = ({
-  text,
-  mainColor,
-  secondaryColor,
-  hoverColor,
-}) => {
+const Button: React.FC<Props> = ({ text, bgColor, color, outline, hover }) => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -33,10 +29,10 @@ const Button: React.FC<Props> = ({
   }, []);
 
   const buttonConfig = {
-    bgColor: "bg-slate-50",
-    color: "text-slate-600",
-    outline: "border-slate-600",
-    hover: "hover:bg-mintTransparent",
+    bgColor,
+    color,
+    outline,
+    hover,
   };
 
   return (
