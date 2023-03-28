@@ -85,7 +85,15 @@ export default function Home() {
             <li className="flex  hover:text-slate-300">About</li>
             <li className="flex  hover:text-slate-300">Projects</li>
             <li className="flex  hover:text-slate-300">Contact</li>
-            <li className="flex  hover:text-slate-300">Resume</li>
+            <li className="flex  hover:text-slate-300">
+              <a
+                href="/files/RESUME_MERLE_en.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
+            </li>
           </ol>
         </nav>
       </header>
