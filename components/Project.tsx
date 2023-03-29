@@ -34,7 +34,7 @@ const Project: React.FC<Props> = ({
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("animate-slide-in");
+          entry.target.classList.add(justifyLookupTable.slideDirection);
           observer.unobserve(entry.target);
         }
       });
@@ -51,6 +51,8 @@ const Project: React.FC<Props> = ({
     absPos: justify === "right" ? "md:ml-64" : null,
     stackJustification:
       justify === "right" ? "md:justify-start" : "md:justify-end",
+    slideDirection:
+      justify === "right" ? "animate-slide-in-ltr" : "animate-slide-in-rtl",
   };
 
   return (
