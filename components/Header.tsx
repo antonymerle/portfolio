@@ -29,13 +29,15 @@ const Header = () => {
     >
       <nav className="flex items-center justify-between">
         <a href="#welcome">
-          <Image
-            src={logo}
-            alt="logo"
-            width={80}
-            height={80}
-            className="rounded-full border-2 border-mint hover:scale-105 duration-300"
-          />
+          <div className="bg-mint rounded-full hover:bg-gradient-to-r hover:from-pink-400 hover:to-orange-300 ">
+            <Image
+              src={logo}
+              alt="logo"
+              width={80}
+              height={80}
+              className="rounded-full p-[2px]"
+            />
+          </div>
         </a>
         {/* Menu items */}
         <ol className="hidden md:flex justify-between items-center space-x-6 text-md text-mint  ">
