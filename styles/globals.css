@@ -73,6 +73,22 @@
   animation-fill-mode: forwards;
 }
 
+@keyframes scale-up-center {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate-scale-up-center {
+  animation-name: scale-up-center;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
 #tsparticles {
   height: 100%;
   width: 100%;

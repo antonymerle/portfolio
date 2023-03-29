@@ -47,7 +47,7 @@ export default function Home() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("animate-slide-in");
+          entry.target.classList.add("animate-scale-up-center");
           observer.unobserve(entry.target);
         }
       });
