@@ -9,6 +9,17 @@
   scroll-behavior: smooth;
 }
 
+#tsparticles {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
 @keyframes slide-in-ltr {
   from {
     transform: translateX(-3rem);
@@ -87,15 +98,4 @@
   animation-duration: 0.4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-}
-
-#tsparticles {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 0;
 }
