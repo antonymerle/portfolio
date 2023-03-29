@@ -82,9 +82,15 @@ export default function Home() {
           />
           {/* Menu items */}
           <ol className="hidden md:flex justify-between items-center space-x-6 text-md text-mint  ">
-            <li className="flex  hover:text-slate-300">About</li>
-            <li className="flex  hover:text-slate-300">Projects</li>
-            <li className="flex  hover:text-slate-300">Contact</li>
+            <li className="flex  hover:text-slate-300">
+              <a href="#about">About</a>
+            </li>
+            <li className="flex  hover:text-slate-300">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="flex  hover:text-slate-300">
+              <a href="#contact">Contact</a>
+            </li>
             <li className="flex  hover:text-slate-300">
               <a
                 href="/files/RESUME_MERLE_en.pdf"
