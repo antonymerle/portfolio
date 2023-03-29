@@ -23,7 +23,6 @@ import istexUPPA from "../public/istex-uppa.jpg";
 import istexUPPA2 from "../public/istex-uppa2.jpg";
 import kanban from "../public/kanban.jpg";
 import wordle from "../public/wordle.jpg";
-import logo from "../public/logo.jpg";
 import logoFullSize from "../public/logo.png";
 import pp from "../public/antony-merle.jpg";
 import Link from "next/link";
@@ -33,6 +32,7 @@ import CallToAction from "@/components/CallToAction";
 import Button from "@/components/Button";
 import Graph from "@/components/Graph";
 import Project from "@/components/Project";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -71,38 +71,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="w-full relative px-64 py-6 bg-gradient-to-b from-slate-900 to-slate-800 ">
-        <nav className="flex items-center justify-between">
-          <Image
-            src={logo}
-            alt="logo"
-            width={80}
-            height={80}
-            className="rounded-full border-2 border-mint hover:scale-105 duration-300"
-          />
-          {/* Menu items */}
-          <ol className="hidden md:flex justify-between items-center space-x-6 text-md text-mint  ">
-            <li className="flex  hover:text-slate-300">
-              <a href="#about">About</a>
-            </li>
-            <li className="flex  hover:text-slate-300">
-              <a href="#projects">Projects</a>
-            </li>
-            <li className="flex  hover:text-slate-300">
-              <a href="#contact">Contact</a>
-            </li>
-            <li className="flex  hover:text-slate-300">
-              <a
-                href="/files/RESUME_MERLE_en.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </a>
-            </li>
-          </ol>
-        </nav>
-      </header>
+      <Header />
       <main className="flex flex-col items-center justify-center w-full">
         <section
           id="welcome"
