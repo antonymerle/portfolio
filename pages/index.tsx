@@ -222,14 +222,14 @@ export default function Home() {
               />
               <Project
                 title="Kanban"
-                description="A kanban board that let you manage tasks efficiently by
-                draging and dropping items from one column to another."
+                description="A kanban board that your team manage tasks efficiently by
+                draging and dropping items from one column to another, add comment and more."
                 justify="right"
                 repoURL="https://github.com/antonymerle/kanban-backend"
                 liveURL="https://kanban-frontend.herokuapp.com/"
                 projectImage={{
                   imageImport: kanban,
-                  width: 710,
+                  width: 800,
                   height: 450,
                   imageAlt: "kanban screencap",
                 }}
@@ -246,7 +246,7 @@ export default function Home() {
                 projectImage={{
                   imageImport: wordle,
                   width: 800,
-                  height: 583,
+                  height: 450,
                   imageAlt: "wordle game screencap",
                 }}
                 stack={["JavaScript", "HTML", "CSS"]}

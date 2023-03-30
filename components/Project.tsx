@@ -53,6 +53,8 @@ const Project: React.FC<Props> = ({
       justify === "right" ? "md:justify-start" : "md:justify-end",
     slideDirection:
       justify === "right" ? "animate-slide-in-ltr" : "animate-slide-in-rtl",
+    descriptionJustification:
+      justify === "right" ? "md:text-left" : "md:text-right",
   };
 
   return (
@@ -96,9 +98,11 @@ const Project: React.FC<Props> = ({
           {title}
         </h3>
         <p
-          className={`text-center bg-cybGrey rounded-sm text-slate-300 text-sm md:text-right p-4 md:col-start-${
-            justify === "right" ? "1" : "7"
-          } md:col-end-${justify === "right" ? "6" : "13"}`}
+          className={`text-center bg-cybGrey rounded-sm text-slate-300 text-sm ${
+            justifyLookupTable.descriptionJustification
+          } p-4 md:col-start-${justify === "right" ? "1" : "7"} md:col-end-${
+            justify === "right" ? "6" : "13"
+          }`}
         >
           {description}
         </p>
