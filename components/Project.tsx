@@ -114,21 +114,16 @@ const Project: React.FC<Props> = ({
         <ul
           className={`project-code-live flex justify-center  space-x-2 py-4 ${justifyLookupTable.stackJustification}`}
         >
-          <li>
+          <li className="text-slate-300 hover:text-mint">
             <a href={repoURL} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon
-                icon={faGithubAlt}
-                className="text-slate-300"
-                style={{ height: "20px" }}
-              />
+              <FontAwesomeIcon icon={faGithubAlt} style={{ height: "20px" }} />
             </a>
           </li>
-          <li>
+          <li className="text-slate-300 hover:text-mint">
             <a href={liveURL} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={faRightFromBracket}
                 style={{ height: "20px" }}
-                className="text-slate-300"
               />
             </a>
           </li>

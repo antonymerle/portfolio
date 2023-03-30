@@ -337,7 +337,7 @@ export default function Home() {
                 their electronic resources acquisitions based on that FTE data.
               </p>
               <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
-                <li>
+                <li className="text-slate-300 hover:text-mint">
                   <a
                     href="https://git.univ-pau.fr/amerle001/sise-analytics"
                     target="_blank"
@@ -345,13 +345,12 @@ export default function Home() {
                   >
                     <FontAwesomeIcon
                       icon={faGithubAlt}
-                      className="text-slate-300"
                       style={{ height: "30px" }}
                     />
                   </a>
                 </li>
 
-                <li>
+                <li className="text-slate-300 hover:text-mint">
                   <a
                     href="https://stats-sise.herokuapp.com/"
                     target="_blank"
@@ -360,7 +359,6 @@ export default function Home() {
                     <FontAwesomeIcon
                       icon={faRightFromBracket}
                       style={{ height: "30px" }}
-                      className="text-slate-300"
                     />
                   </a>
                 </li>
@@ -386,7 +384,7 @@ export default function Home() {
                 academic project designed to be displayed on mobile phones only.
               </p>
               <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
-                <li>
+                <li className="text-slate-300 hover:text-mint">
                   <a
                     href="https://github.com/antonymerle/boardLeaseBackend"
                     target="_blank"
@@ -394,13 +392,12 @@ export default function Home() {
                   >
                     <FontAwesomeIcon
                       icon={faGithubAlt}
-                      className="text-slate-300"
                       style={{ height: "30px" }}
                     />
                   </a>
                 </li>
 
-                <li>
+                <li className="text-slate-300 hover:text-mint">
                   <a
                     href="https://board-lease-frontend.vercel.app/"
                     target="_blank"
@@ -409,7 +406,6 @@ export default function Home() {
                     <FontAwesomeIcon
                       icon={faRightFromBracket}
                       style={{ height: "30px" }}
-                      className="text-slate-300"
                     />
                   </a>
                 </li>
@@ -432,7 +428,7 @@ export default function Home() {
                 user.
               </p>
               <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
-                <li>
+                <li className="text-slate-300 hover:text-mint">
                   <a
                     href="https://git.univ-pau.fr/amerle001/phishEye"
                     target="_blank"
@@ -440,13 +436,12 @@ export default function Home() {
                   >
                     <FontAwesomeIcon
                       icon={faGithubAlt}
-                      className="text-slate-300"
                       style={{ height: "30px" }}
                     />
                   </a>
                 </li>
 
-                <li>
+                <li className="text-slate-300 hover:text-mint">
                   <a
                     href="https://git.univ-pau.fr/amerle001/phishEye/-/releases"
                     target="_blank"
@@ -455,7 +450,6 @@ export default function Home() {
                     <FontAwesomeIcon
                       icon={faRightFromBracket}
                       style={{ height: "30px" }}
-                      className="text-slate-300"
                     />
                   </a>
                 </li>
