@@ -32,7 +32,7 @@ import CallToAction from "@/components/CallToAction";
 import Button from "@/components/Button";
 import Graph from "@/components/Graph";
 import Project from "@/components/Project";
-import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -71,7 +71,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Navbar />
       <main className="flex flex-col items-center justify-center w-full">
         <section
           id="welcome"
