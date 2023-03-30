@@ -1,4 +1,3 @@
-import React from "react";
 import Graph from "./Graph";
 
 const Header = () => {
@@ -18,7 +17,6 @@ const Header = () => {
           <span className="text-slate-50">Antony Merle.</span>
           <span>I build apps for today's Internet.</span>
         </h1>
-        {/* TODO: make it readable on large screen by narrowing column */}
         <p className="text-2xl">
           I am a fullstack web developer with a passion for crafting intuitive
           and user-friendly web experiences. My main focus is developing
@@ -26,8 +24,6 @@ const Header = () => {
           three years of experience and a focus on continual learning, I am
           committed to delivering high-quality and maintainable solutions.
         </p>
-        {/* <div className="w-full h-96 relative bg-mint">
-            </div> */}
       </div>
     </header>
   );
