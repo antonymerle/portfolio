@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header
       id="welcome"
-      className="h-screen flex flex-col justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300 md:py-48  md:px-24 md:text-left lg:px-64"
+      className="h-screen w-full flex flex-col justify-start space-y-4  px-6  bg-slate-800 text-center text-slate-300 md:py-48  md:pl-24 md:pr-40 md:text-left lg:px-64"
     >
       <Graph />
       <div className="flex flex-col justify-start container mx-auto z-10">
