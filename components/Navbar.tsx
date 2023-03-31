@@ -57,6 +57,39 @@ const Navbar = () => {
         >
           <FontAwesomeIcon icon={faBars} className="text-mint  h-[20px]" />
         </button>
+
+        {isMenuOpen && (
+          <div className="p-6 bg-slate-800 border-2 border-mint fixed top-20 left-56 text-right rounded-md md:hidden">
+            <ol className="flex flex-col justify-center items-center h-full space-y-8 text-2xl text-mint">
+              <li>
+                <a href="#about" onClick={() => setIsMenuOpen(false)}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#projects" onClick={() => setIsMenuOpen(false)}>
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/files/RESUME_MERLE_en.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Resume
+                </a>
+              </li>
+            </ol>
+          </div>
+        )}
+
         {/* md Menu */}
         <ol
           className={`hidden md:flex justify-between items-center space-x-6 text-md text-mint`}
