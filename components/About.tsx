@@ -9,11 +9,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-max md:h-screen w-full pt-44  px-6 bg-slate-50"
+      className="h-fit md:h-screen w-full py-12 px-6 bg-slate-50 z-10"
     >
       <div
         id="about-container"
-        className="h-4/5 max-w-[900px] mx-auto px-12 pt-24 bg-slate-100 "
+        className="h-3/5 max-w-[900px] mx-auto px-12 pt-24  bg-slate-100 "
       >
         <div
           id="about-header"
@@ -27,25 +27,29 @@ const About = () => {
 
         <div
           id="about-inner"
-          className="flex flex-col container md:h-auto md:grid md:gap-4 md:grid-cols-[2fr_1fr] md:grid-rows-2"
+          className="flex flex-col container md:h-auto md:grid md:gap-6 md:grid-cols-[3fr_2fr] md:grid-rows-2"
         >
           <div id="about-text" className="text-center md:text-left">
             <p className="pb-6">
-              I live in the Basque Country, southwest of France. I am a father
-              of three. Since the beginning of my programming journey in 2017, I
-              worked for the public sector, as head of IT for the University of
-              Pau libraries. I specialized in the MERN stack to build
-              applications everybody could share and use in their browser. I
-              learned the JavaScript, specifically the MERN stack and I used
-              that knowledge to build online apps to provide business
-              intelligence, automatize repetitive task, help student to get
-              online services, etc. In 2023, I gratuaded at La Capsule bootcamp,
-              worked on board.lease, a peer to peer surfoard renting
-              mobile-first website. I am currently open to work. Here are some
-              details about my stack :
+              I am a father of three and live in the Basque Country, southwest
+              of France. It's a beautiful land and culture that inspire me
+              everyday in my work. Since the beginning of my programming journey
+              in 2017, I worked as head of IT for the University of Pau's
+              academic libraries. I specialized in JavaScript and TypeScript to
+              build applications everybody can use simply in their browser, with
+              no installation needed. I built apps that focus on very different
+              topics like providing business intelligence, automating repetitive
+              tasks, helping students with administrative procedures. In 2023, I
+              gratuaded at La Capsule bootcamp, worked on board.lease, a peer to
+              peer surfoard renting mobile-first website. I am currently open to
+              work.
             </p>
+
+            <h3 className="space-x-2  text-lg font-bold pt-16 pb-2  md:text-xl text-slate-700">
+              Stack
+            </h3>
             {/* bloc compétences */}
-            <ul className="grid grid-cols-2 grid-rows-3 flex-wrap h-20 my-4 text-sm">
+            <ul className="grid grid-cols-2 grid-rows-3  my-4 text-sm">
               <li className="flex">
                 <span className="mr-2">{plusBullet}</span>JavaScript
               </li>
