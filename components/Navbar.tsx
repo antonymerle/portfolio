@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "../public/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isScrolledUp, setIsScrolledUp] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <a href="#welcome">
           <div
-            className={`w-1/2 md:w-full bg-mint rounded-full ${gradientConfig.bg}`}
+            className={`w-1/2 md:w-full bg-mint rounded-full md:${gradientConfig.bg}`}
           >
             <Image
               src={logo}
@@ -55,7 +55,10 @@ const Navbar = () => {
           className="md:hidden focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <FontAwesomeIcon icon={faBars} className="text-mint  h-[20px]" />
+          <FontAwesomeIcon
+            icon={isMenuOpen ? faXmark : faBars}
+            className="text-mint  h-[20px]"
+          />
         </button>
 
         {isMenuOpen && (
