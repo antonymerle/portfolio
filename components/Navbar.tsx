@@ -59,7 +59,10 @@ const Navbar = () => {
         </button>
 
         {isMenuOpen && (
-          <div className="p-6 bg-slate-800 border-2 border-mint fixed top-20 left-56 text-right rounded-md md:hidden">
+          <div
+            className="transition ease-in-out transform scale-75 translate-y-16 delay-150 
+           p-6 bg-slate-800 border-2 border-mint fixed top-0 left-56 text-right rounded-md md:hidden"
+          >
             <ol className="flex flex-col justify-center items-center h-full space-y-8 text-2xl text-mint">
               <li>
                 <a href="#about" onClick={() => setIsMenuOpen(false)}>
