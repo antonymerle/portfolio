@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "../public/logo.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isScrolledUp, setIsScrolledUp] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,14 +30,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full px-64 py-6 bg-gradient-to-b from-slate-900 to-slate-800 
+      className={`w-full pl-6 pr-36 md:px-24 py-6 
+      bg-gradient-to-b from-slate-900 to-slate-800 
       fixed top-0 z-50 transition duration-300 ease-in-out transform ${
         isScrolledUp ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <nav className="flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <a href="#welcome">
-          <div className={`bg-mint rounded-full ${gradientConfig.bg}`}>
+          <div
+            className={`w-1/2 md:w-full bg-mint rounded-full ${gradientConfig.bg}`}
+          >
             <Image
               src={logo}
               alt="logo"
@@ -44,7 +50,14 @@ const Navbar = () => {
             />
           </div>
         </a>
-        {/* Menu items */}
+        {/* sm Menu */}
+        <button
+          className="md:hidden focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <FontAwesomeIcon icon={faBars} className="text-mint  h-[20px]" />
+        </button>
+        {/* md Menu */}
         <ol
           className={`hidden md:flex justify-between items-center space-x-6 text-md text-mint`}
         >
@@ -67,7 +80,7 @@ const Navbar = () => {
             </a>
           </li>
         </ol>
-      </nav>
+      </div>
     </nav>
   );
 };
