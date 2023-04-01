@@ -77,7 +77,7 @@ export default function Home() {
         {/* PROJETS */}
         <section
           id="projects"
-          className="h-max flex flex-col justify-start md:w-3/4 space-y-4 mb-48 pt-24 px-6  bg-slate-800 text-center text-slate-300  md:px-24 md:text-left lg:px-32"
+          className="h-max flex flex-col justify-start lg:w-3/4 space-y-4 mb-48 pt-24 px-6  bg-slate-800 text-center text-slate-300   lg:text-left lg:px-32"
         >
           <div
             id="projects-container"
@@ -85,14 +85,14 @@ export default function Home() {
           >
             <div
               id="projects-header"
-              className="w-full flex flex-row justify-center items-center md:justify-start"
+              className="w-full flex flex-row justify-center items-center lg:justify-start"
             >
-              <h2 className="space-x-2 py-6 text-xl font-bold  md:text-4xl">
+              <h2 className="space-x-2 py-6 text-xl font-bold  lg:text-4xl">
                 <span className="text-lg text-mint">02.</span>
                 <span>Projects I built</span>
               </h2>
             </div>
-            <ul className="space-y-12 md:space-y-44">
+            <ul className="space-y-12 lg:space-y-44">
               <Project
                 title="ISTEX-UPPA"
                 description=" A search engine frontend to the ISTEX database : explore
@@ -142,19 +142,19 @@ export default function Home() {
               />
             </ul>
             <ul className="hidden">
-              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full md:min-w-[600px] md:z-10 "></div>
-                <div className="absolute top-0 left-0 project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20"></div>
+              <li className="relative w-full h-full lg:opacity-100 lg:bg-none lg:grid lg:grid-cols-12 lg:grid-rows-6 lg:gap-2 lg:overflow-hidden">
+                <div className="col-span-full row-span-full lg:transition-all lg:hover:scale-105 lg:hover:rounded-sm lg:duration-300 rounded-sm min-w-[200px] lg:opacity-100 lg:col-start-1 lg:col-end-8 lg:row-span-full lg:min-w-[600px] lg:z-10 "></div>
+                <div className="absolute top-0 left-0 project-description lg:col-start-7 lg:col-end-13 lg:row-span-full lg:z-20"></div>
               </li>
 
-              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-5 md:col-end-13 md:row-span-full  md:min-w-[600px] md:z-10 "></div>
-                <div className="absolute top-0 left-0 project-description md:col-start-1 md:col-end-7 md:row-span-full md:z-20"></div>
+              <li className="relative w-full h-full lg:opacity-100 lg:bg-none lg:grid lg:grid-cols-12 lg:grid-rows-6 lg:gap-2 lg:overflow-hidden">
+                <div className="col-span-full row-span-full lg:transition-all lg:hover:scale-105 lg:hover:rounded-sm lg:duration-300 rounded-sm min-w-[200px] lg:opacity-100 lg:col-start-5 lg:col-end-13 lg:row-span-full  lg:min-w-[600px] lg:z-10 "></div>
+                <div className="absolute top-0 left-0 project-description lg:col-start-1 lg:col-end-7 lg:row-span-full lg:z-20"></div>
               </li>
 
-              <li className="relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden">
-                <div className="col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-1 md:col-end-8 md:row-span-full  md:min-w-[600px] md:z-10 "></div>
-                <div className="absolute top-0 left-0 project-description md:col-start-7 md:col-end-13 md:row-span-full md:z-20"></div>
+              <li className="relative w-full h-full lg:opacity-100 lg:bg-none lg:grid lg:grid-cols-12 lg:grid-rows-6 lg:gap-2 lg:overflow-hidden">
+                <div className="col-span-full row-span-full lg:transition-all lg:hover:scale-105 lg:hover:rounded-sm lg:duration-300 rounded-sm min-w-[200px] lg:opacity-100 lg:col-start-1 lg:col-end-8 lg:row-span-full  lg:min-w-[600px] lg:z-10 "></div>
+                <div className="absolute top-0 left-0 project-description lg:col-start-7 lg:col-end-13 lg:row-span-full lg:z-20"></div>
               </li>
             </ul>
           </div>

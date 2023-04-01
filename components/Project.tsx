@@ -48,28 +48,27 @@ const Project: React.FC<Props> = ({
   }, []);
 
   const justifyLookupTable = {
-    absPos: justify === "right" ? "md:ml-64" : null,
+    absPos: justify === "right" ? "lg:ml-64" : null,
     stackJustification:
-      justify === "right" ? "md:justify-start" : "md:justify-end",
+      justify === "right" ? "lg:justify-start" : "lg:justify-end",
     slideDirection:
       justify === "right" ? "animate-slide-in-ltr" : "animate-slide-in-rtl",
     descriptionJustification:
-      justify === "right" ? "md:text-left" : "md:text-right",
+      justify === "right" ? "lg:text-left" : "lg:text-right",
   };
 
   return (
     <li
       ref={ref}
       className={`${justifyLookupTable.absPos} relative w-full h-full py-12 px-6 bg-slate-700 rounded-md
-      
-      md:opacity-100 md:bg-transparent md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden`}
+      lg:opacity-100 lg:bg-transparent lg:grid lg:grid-cols-12 lg:grid-rows-6 lg:gap-2 lg:overflow-hidden`}
     >
       <div
-        className={`col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-${
+        className={`col-span-full row-span-full lg:transition-all lg:hover:scale-105 lg:hover:rounded-sm lg:duration-300 rounded-sm min-w-[200px] lg:opacity-100 lg:col-start-${
           justify === "right" ? "5" : "1"
-        } md:col-end-${
+        } lg:col-end-${
           justify === "right" ? "13" : "8"
-        } md:row-span-full md:min-w-[600px] md:z-10 `}
+        } lg:row-span-full lg:min-w-[600px] lg:z-10 `}
       >
         {/* TODO : replace css bg by optimzed image  */}
         <Image
@@ -77,39 +76,38 @@ const Project: React.FC<Props> = ({
           width={projectImage.width}
           height={projectImage.height}
           alt={projectImage.imageAlt}
-          className="-z-1" // change that when hover
           priority={true}
         />
 
-        {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
+        {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  lg:bg-mint/60 lg:backdrop-brightness-75"></div> */}
       </div>
       <div
-        className={`md:absolute md:top-0 md:left-0 project-description md:col-start-${
+        className={`lg:absolute lg:top-0 lg:left-0 project-description lg:col-start-${
           justify === "right" ? "1" : "7"
-        } md:col-end-${
+        } lg:col-end-${
           justify === "right" ? "7" : "13"
-        } md:row-span-full md:z-20`}
+        } lg:row-span-full lg:z-20`}
       >
         <h3
-          className={`py-8 text-slate-300 text-2xl font-bold md:col-start-${
+          className={`py-8 text-slate-300 text-2xl font-bold lg:col-start-${
             justify === "right" ? "1" : "9"
-          } md:col-end-${
+          } lg:col-end-${
             justify === "right" ? "4" : "13"
-          } md:row-span-1 md:text-${justify === "right" ? "left" : "right"}`}
+          } lg:row-span-1 lg:text-${justify === "right" ? "left" : "right"}`}
         >
           {title}
         </h3>
         <p
           className={`text-center bg-cybGrey rounded-sm text-slate-300 text-sm ${
             justifyLookupTable.descriptionJustification
-          } p-4 md:col-start-${justify === "right" ? "1" : "7"} md:col-end-${
+          } p-4 lg:col-start-${justify === "right" ? "1" : "7"} lg:col-end-${
             justify === "right" ? "6" : "13"
           }`}
         >
           {description}
         </p>
         <ul
-          className={`project-technos flex justify-center text-sm space-x-2 py-4 text-mint md:justify-${
+          className={`project-technos flex justify-center text-sm space-x-2 py-4 text-mint lg:justify-${
             justify === "right" ? "start" : "end"
           }`}
         >
