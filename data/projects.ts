@@ -9,7 +9,7 @@ import istexUPPA2 from "../public/istex-uppa2.jpg";
 import kanban from "../public/kanban.jpg";
 import wordle from "../public/wordle.jpg";
 
-interface MainProject {
+export interface IMainProject {
   title: string;
   description: string;
   projectImage: {
@@ -24,7 +24,7 @@ interface MainProject {
   justify: string;
 }
 
-export const mainProjects: Array<MainProject> = [
+export const mainProjects: Array<IMainProject> = [
   {
     title: "ISTEX-UPPA",
     description:

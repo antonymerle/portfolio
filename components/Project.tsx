@@ -3,23 +3,9 @@ import Image, { StaticImageData } from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import { IMainProject } from "@/data/projects";
 
-interface Props {
-  projectImage: {
-    imageImport: StaticImageData;
-    width: number;
-    height: number;
-    imageAlt: string;
-  };
-  title: string;
-  description: string;
-  stack: Array<String>;
-  repoURL: string;
-  liveURL: string;
-  justify: string;
-}
-
-const Project: React.FC<Props> = ({
+const Project: React.FC<IMainProject> = ({
   projectImage,
   title,
   description,
