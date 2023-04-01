@@ -60,7 +60,9 @@ const Project: React.FC<Props> = ({
   return (
     <li
       ref={ref}
-      className={`${justifyLookupTable.absPos} relative w-full h-full md:opacity-100 md:bg-none md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden`}
+      className={`${justifyLookupTable.absPos} relative w-full h-full py-12 px-6 bg-slate-700 rounded-md
+      
+      md:opacity-100 md:bg-transparent md:grid md:grid-cols-12 md:grid-rows-6 md:gap-2 md:overflow-hidden`}
     >
       <div
         className={`col-span-full row-span-full md:transition-all md:hover:scale-105 md:hover:rounded-sm md:duration-300 rounded-sm min-w-[200px] md:opacity-100 md:col-start-${
@@ -82,7 +84,7 @@ const Project: React.FC<Props> = ({
         {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  md:bg-mint/60 md:backdrop-brightness-75"></div> */}
       </div>
       <div
-        className={`absolute top-0 left-0 project-description md:col-start-${
+        className={`md:absolute md:top-0 md:left-0 project-description md:col-start-${
           justify === "right" ? "1" : "7"
         } md:col-end-${
           justify === "right" ? "7" : "13"

@@ -92,7 +92,7 @@ export default function Home() {
                 <span>Projects I built</span>
               </h2>
             </div>
-            <ul className="space-y-44">
+            <ul className="space-y-12 md:space-y-44">
               <Project
                 title="ISTEX-UPPA"
                 description=" A search engine frontend to the ISTEX database : explore
