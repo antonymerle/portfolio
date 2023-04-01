@@ -20,7 +20,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import jellyfish from "../public/jellyfish.png";
 import istexUPPA from "../public/istex-uppa.jpg";
-import istexUPPA2 from "../public/istex-uppa2.jpg";
+
 import kanban from "../public/kanban.jpg";
 import wordle from "../public/wordle.jpg";
 
@@ -36,8 +36,10 @@ import Header from "@/components/Header";
 import About from "@/components/About";
 import SideProject from "@/components/SideProject";
 import SideProjects from "@/components/SideProjects";
+
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import MainProjects from "@/components/MainProjects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -78,55 +80,7 @@ export default function Home() {
                 <span>Projects I built</span>
               </h2>
             </div>
-            <ul className="space-y-12 lg:space-y-44">
-              <Project
-                title="ISTEX-UPPA"
-                description=" A search engine frontend to the ISTEX database : explore
-                    scientific, technical and medical research through 27
-                    millions articles."
-                justify="left"
-                repoURL="https://github.com/antonymerle/istex-uppa"
-                liveURL="https://istex-uppa.herokuapp.com/"
-                projectImage={{
-                  imageImport: istexUPPA2,
-                  width: 800,
-                  height: 450,
-                  imageAlt: "istex uppa screencap",
-                }}
-                stack={["TypeScript", "Angular", "rxjs"]}
-              />
-              <Project
-                title="Kanban"
-                description="A kanban board that your team manage tasks efficiently by
-                draging and dropping items from one column to another, add comment and more."
-                justify="right"
-                repoURL="https://github.com/antonymerle/kanban-backend"
-                liveURL="https://kanban-frontend.herokuapp.com/"
-                projectImage={{
-                  imageImport: kanban,
-                  width: 800,
-                  height: 450,
-                  imageAlt: "kanban screencap",
-                }}
-                stack={["NodeJS", "Express", "Socket.io", "React"]}
-              />
-
-              <Project
-                title="Wordle"
-                description="Wordle is a popular online word game where the player has to
-                guess a five-letter word in a limited number of attempts."
-                justify="left"
-                repoURL="https://github.com/antonymerle/wordle"
-                liveURL="https://wordle-bay-one.vercel.app/"
-                projectImage={{
-                  imageImport: wordle,
-                  width: 800,
-                  height: 450,
-                  imageAlt: "wordle game screencap",
-                }}
-                stack={["JavaScript", "HTML", "CSS"]}
-              />
-            </ul>
+            <MainProjects />
             <ul className="hidden">
               <li className="relative w-full h-full lg:opacity-100 lg:bg-none lg:grid lg:grid-cols-12 lg:grid-rows-6 lg:gap-2 lg:overflow-hidden">
                 <div className="col-span-full row-span-full lg:transition-all lg:hover:scale-105 lg:hover:rounded-sm lg:duration-300 rounded-sm min-w-[200px] lg:opacity-100 lg:col-start-1 lg:col-end-8 lg:row-span-full lg:min-w-[600px] lg:z-10 "></div>

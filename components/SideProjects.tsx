@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import SideProject from "./SideProject";
-import sideProjects from "../data/projects";
+import { sideProjects } from "../data/projects";
 
 const sideProjectsJSX = sideProjects.map((project, i) => (
   <SideProject
