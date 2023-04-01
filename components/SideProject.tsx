@@ -21,16 +21,18 @@ const SideProject: React.FC<Props> = ({
   liveURL,
 }) => {
   return (
-    <li className="grid grid-cols-1 grid-flow-row-dense w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
-      <FontAwesomeIcon
-        icon={projectIcon}
-        className="text-slate-300 pb-4 h-[4rem]"
-      />
-      <h3 className="text-xl font-bold pb-4 lg:text-3xl text-slate-300">
+    <li className=" lg:text-left grid grid-cols-1 grid-flow-row-dense justify-center w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
+      <div className="flex justify-center xl:justify-start">
+        <FontAwesomeIcon
+          icon={projectIcon}
+          className="text-slate-300 pb-4 h-[4rem]"
+        />
+      </div>
+      <h3 className="text-center xl:text-left text-xl font-bold pb-4 lg:text-3xl text-slate-300">
         {title}
       </h3>
-      <p>{description}</p>
-      <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
+      <p className="text-center xl:text-left">{description}</p>
+      <ul className="w-full project-code-live flex justify-center  space-x-2 py-12 xl:justify-start">
         <li className="text-slate-300 hover:text-mint">
           <a href={repoURL} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithubAlt} style={{ height: "30px" }} />
