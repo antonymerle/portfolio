@@ -1,42 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPlus,
-  faRightFromBracket,
-  faEnvelope,
-  faChartColumn,
-  faLineChart,
-  faWater,
-  faShieldHalved,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithubAlt,
-  faLinkedinIn,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import jellyfish from "../public/jellyfish.png";
-import istexUPPA from "../public/istex-uppa.jpg";
-
-import kanban from "../public/kanban.jpg";
-import wordle from "../public/wordle.jpg";
-
-import Link from "next/link";
-
-import { useEffect, useRef } from "react";
-import CallToAction from "@/components/CallToAction";
-import Button from "@/components/Button";
-import Graph from "@/components/Graph";
-import Project from "@/components/Project";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import About from "@/components/About";
-import SideProject from "@/components/SideProject";
 import SideProjects from "@/components/SideProjects";
-
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MainProjects from "@/components/MainProjects";
@@ -58,9 +25,8 @@ export default function Home() {
       <Navbar />
       <Header />
       <main className="flex flex-col items-center justify-center w-full">
-        {/* ABOUT */}
         <About />
-        {/* PROJETS */}
+
         <section
           id="projects"
           className="h-max flex flex-col justify-start 
@@ -99,7 +65,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        {/* OTHER SIGNIFICANTS PROJECTS */}
+
         <section
           id="other-projects"
           className="w-full h-max flex flex-col items-center justify-center px-4 py-24 bg-slate-800"
@@ -110,7 +76,6 @@ export default function Home() {
           <SideProjects />
         </section>
 
-        {/* CONTACT SECTION */}
         <section
           id="contact"
           className="
@@ -120,8 +85,6 @@ export default function Home() {
           <Contact />
         </section>
       </main>
-
-      {/* FOOTER */}
       <Footer />
     </div>
   );

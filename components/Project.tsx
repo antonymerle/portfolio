@@ -70,7 +70,6 @@ const Project: React.FC<Props> = ({
           justify === "right" ? "13" : "8"
         } lg:row-span-full lg:min-w-[600px] lg:z-10 `}
       >
-        {/* TODO : replace css bg by optimzed image  */}
         <Image
           src={projectImage.imageImport}
           width={projectImage.width}
@@ -78,8 +77,6 @@ const Project: React.FC<Props> = ({
           alt={projectImage.imageAlt}
           priority={true}
         />
-
-        {/* <div className="w-full h-full transition-all hover:bg-mint/0 rounded-sm duration-300  lg:bg-mint/60 lg:backdrop-brightness-75"></div> */}
       </div>
       <div
         className={`lg:absolute lg:top-0 lg:left-0 project-description lg:col-start-${
