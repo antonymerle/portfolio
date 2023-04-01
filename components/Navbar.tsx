@@ -30,13 +30,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full pl-6 pr-36 md:px-24 py-6 
+      className={`w-screen px-6 md:px-24 py-6 
       bg-gradient-to-b from-slate-900 to-slate-800 
       fixed top-0 z-50 transition duration-300 ease-in-out transform ${
         isScrolledUp ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex w-full items-center justify-between">
         <a href="#welcome">
           <div
             className={`w-1/2 md:w-full bg-mint rounded-full md:${gradientConfig.bg}`}

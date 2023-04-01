@@ -23,9 +23,9 @@ const Footer = () => {
         Antony Merle, {new Date().getFullYear()}
       </h6>
 
-      <ul className="flex flex-row space-x-10">
+      <ul className="flex flex-row space-x-6 md:space-x-10">
         <a href="https://github.com/antonymerle" target="blank">
-          <li className="border-2 border-slate-100 p-6 rounded-full transition-colors duration-300 ease-in hover:bg-slate-600">
+          <li className="md:border-2 md:border-slate-100 p-2 md:p-6 md:rounded-full md:transition-colors md:duration-300 md:ease-in md:hover:bg-slate-600">
             <FontAwesomeIcon icon={faGithubAlt} style={{ height: "33px" }} />
           </li>
         </a>
@@ -33,22 +33,22 @@ const Footer = () => {
           href="https://www.linkedin.com/in/antony-merle-25854042/"
           target="blank"
         >
-          <li className="border-2 border-slate-100 p-6 rounded-full transition-colors duration-300 ease-in hover:bg-slate-600">
+          <li className="md:border-2 md:border-slate-100 p-2 md:p-6 md:rounded-full md:transition-colors md:duration-300 md:ease-in md:hover:bg-slate-600">
             <FontAwesomeIcon icon={faLinkedinIn} style={{ height: "33px" }} />
           </li>
         </a>{" "}
         <a href="https://www.instagram.com/antonymerle/" target="blank">
-          <li className="border-2 border-slate-100 p-6 rounded-full transition-colors duration-300 ease-in hover:bg-slate-600">
+          <li className="md:border-2 md:border-slate-100 p-2 md:p-6 md:rounded-full md:transition-colors md:duration-300 md:ease-in md:hover:bg-slate-600">
             <FontAwesomeIcon icon={faInstagram} style={{ height: "33px" }} />
           </li>
         </a>{" "}
         <a href="https://twitter.com/AntonyMerleDev" target="blank">
-          <li className="border-2 border-slate-100 p-6 rounded-full transition-colors duration-300 ease-in hover:bg-slate-600 ">
+          <li className="md:border-2 md:border-slate-100 p-2 md:p-6 md:rounded-full md:transition-colors md:duration-300 md:ease-in md:hover:bg-slate-600 ">
             <FontAwesomeIcon icon={faTwitter} style={{ height: "33px" }} />
           </li>
         </a>
         <a href="mailto:antony.merle@gmail.com" target="blank">
-          <li className="border-2 border-slate-100 p-6 rounded-full transition-colors duration-300 ease-in hover:bg-slate-600">
+          <li className="md:border-2 md:border-slate-100 p-2 md:p-6 md:rounded-full md:transition-colors md:duration-300 md:ease-in md:hover:bg-slate-600">
             <FontAwesomeIcon icon={faEnvelope} style={{ height: "33px" }} />
           </li>
         </a>
