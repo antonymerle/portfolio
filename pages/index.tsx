@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="bg-slate-800 font-sans w-full">
       <Head>
-        <title>Antony Merle</title>
+        <title>Antony Merle | Fullstack web developer</title>
         <meta
           name="description"
           content="Antony Merle fullstack developer portfolio"
