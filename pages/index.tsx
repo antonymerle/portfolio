@@ -63,7 +63,7 @@ export default function Home() {
           id="projects"
           className="h-max flex flex-col justify-start 
           xl:w-3/4 2xl:pr-32 2xl:pl-32 min-[1453px]:pl-12 xl:pl-0 xl:pr-0
-          space-y-4 mb-48 pt-24 px-6  bg-slate-800 text-center text-slate-300 lg:text-left "
+          space-y-4 mb-24 pt-24 px-6  bg-slate-800 text-center text-slate-300 lg:text-left "
         >
           <div
             id="projects-container"
