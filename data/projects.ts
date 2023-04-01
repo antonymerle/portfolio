@@ -93,7 +93,7 @@ export const sideProjects = [
     projectIcon: faShieldHalved,
     title: "PHISHEYE BROWSER EXTENSION",
     description:
-      "PhishEye is a web browser extension designed to protect Université de Pau webmail users from phishing mails. Attacks being predictables, the extension is able to detect malicious links, sanitize them and display an informative message to theuser.",
+      "PhishEye is a web browser extension designed to protect Université de Pau webmail users from phishing. Attacks being often predictables, the extension is able to detect malicious links, sanitize them and display an informative message to the user.",
     repoURL: "https://git.univ-pau.fr/amerle001/phishEye",
     liveURL: "https://git.univ-pau.fr/amerle001/phishEye/-/releases",
   },
