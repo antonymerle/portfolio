@@ -40,9 +40,9 @@ const About = () => {
               no installation needed. I built apps that focus on very different
               topics like providing business intelligence, automating repetitive
               tasks, helping students with administrative procedures. In 2023, I
-              gratuaded at La Capsule bootcamp, worked on board.lease, a peer to
-              peer surfoard renting mobile-first website. I am currently open to
-              work.
+              gratuaded at <i>la Capsule</i> bootcamp, worked on board.lease, a
+              peer to peer surfoard renting mobile-first website. I am currently
+              open to work.
             </p>
 
             <h3 className="space-x-2  text-lg font-bold pt-16 pb-2  md:text-xl text-slate-700">
