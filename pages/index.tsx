@@ -35,8 +35,22 @@ import Project from "@/components/Project";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import About from "@/components/About";
+import SideProject from "@/components/SideProject";
+import sideProjects from "../data/projects";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const sideProjectsJSX = sideProjects.map((project, i) => (
+  <SideProject
+    projectIcon={project.projectIcon}
+    title={project.title}
+    description={project.description}
+    repoURL={project.repoURL}
+    liveURL={project.liveURL}
+    key={i}
+  />
+));
+console.log(sideProjectsJSX);
 
 export default function Home() {
   const ref = useRef(null);
@@ -175,142 +189,7 @@ export default function Home() {
             className="
           flex flex-col md:flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 lg:flex-row lg:w-2/3"
           >
-            <li className="grid grid-cols-1 grid-flow-row-dense w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
-              <FontAwesomeIcon
-                icon={faLineChart}
-                className="text-slate-300 pb-4 h-[4rem]"
-              />
-              <h3
-                className="text-xl font-bold pb-4 lg:text-3xl text-slate-300 
-              "
-              >
-                SISE ANALYTICS
-              </h3>
-              <p>
-                SISE Analytics is a dashboard that fetches Full-Time-Equivalent
-                (FTE) of french universities, process the data and export it on
-                a SpreadSheet. Sise Analytics helps academic libraries to manage
-                their electronic resources acquisitions based on that FTE data.
-              </p>
-              <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
-                <li className="text-slate-300 hover:text-mint">
-                  <a
-                    href="https://git.univ-pau.fr/amerle001/sise-analytics"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faGithubAlt}
-                      style={{ height: "30px" }}
-                    />
-                  </a>
-                </li>
-
-                <li className="text-slate-300 hover:text-mint">
-                  <a
-                    href="https://stats-sise.herokuapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faRightFromBracket}
-                      style={{ height: "30px" }}
-                    />
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="grid grid-cols-1 grid-flow-row-dense w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
-              <FontAwesomeIcon
-                icon={faWater}
-                className="text-slate-300 pb-4 h-[4rem]"
-              />
-              <h3
-                className="
-                text-slate-300 text-3xl font-bold pb-4"
-              >
-                BOARD.LEASE
-              </h3>
-              <p>
-                Board.lease is a platform made by surfers for surfers. On
-                board.lease, you can rent your board on your future holiday
-                spot. If you're a local, you can put your surfboard to rent,
-                make a little money and help a fellow surfer ! Board.lease is an
-                academic project designed to be displayed on mobile phones only.
-              </p>
-              <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
-                <li className="text-slate-300 hover:text-mint">
-                  <a
-                    href="https://github.com/antonymerle/boardLeaseBackend"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faGithubAlt}
-                      style={{ height: "30px" }}
-                    />
-                  </a>
-                </li>
-
-                <li className="text-slate-300 hover:text-mint">
-                  <a
-                    href="https://board-lease-frontend.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faRightFromBracket}
-                      style={{ height: "30px" }}
-                    />
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="grid grid-cols-1 grid-flow-row-dense w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
-              <FontAwesomeIcon
-                icon={faShieldHalved}
-                className="text-slate-300 pb-4 h-[4rem]"
-              />
-              <h3 className="text-slate-300 text-3xl font-bold pb-4">
-                PHISHEYE BROWSER EXTENSION
-              </h3>
-              <p>
-                PhishEye is a web browser extension designed to protect
-                Université de Pau webmail users from phishing mails. Attacks
-                being predictables, the extension is able to detect malicious
-                links, sanitize them and display an informative message to the
-                user.
-              </p>
-              <ul className="project-code-live flex justify-center  space-x-2 py-12 md:justify-start">
-                <li className="text-slate-300 hover:text-mint">
-                  <a
-                    href="https://git.univ-pau.fr/amerle001/phishEye"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faGithubAlt}
-                      style={{ height: "30px" }}
-                    />
-                  </a>
-                </li>
-
-                <li className="text-slate-300 hover:text-mint">
-                  <a
-                    href="https://git.univ-pau.fr/amerle001/phishEye/-/releases"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faRightFromBracket}
-                      style={{ height: "30px" }}
-                    />
-                  </a>
-                </li>
-              </ul>
-            </li>
+            {sideProjectsJSX}
           </ul>
         </section>
 
