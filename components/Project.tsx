@@ -48,7 +48,7 @@ const Project: React.FC<Props> = ({
   }, []);
 
   const justifyLookupTable = {
-    absPos: justify === "right" ? "lg:ml-64" : null,
+    absPos: justify === "right" ? "xl:ml-64" : null,
     stackJustification:
       justify === "right" ? "lg:justify-start" : "lg:justify-end",
     slideDirection:
