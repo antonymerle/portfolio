@@ -36,42 +36,11 @@ import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import About from "@/components/About";
 import SideProject from "@/components/SideProject";
-import sideProjects from "../data/projects";
+import SideProjects from "@/components/SideProjects";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const sideProjectsJSX = sideProjects.map((project, i) => (
-  <SideProject
-    projectIcon={project.projectIcon}
-    title={project.title}
-    description={project.description}
-    repoURL={project.repoURL}
-    liveURL={project.liveURL}
-    key={i}
-  />
-));
-console.log(sideProjectsJSX);
-
 export default function Home() {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-scale-up-center");
-          observer.unobserve(entry.target);
-        }
-      });
-    });
-
-    observer.observe(ref.current as any);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
   return (
     <div className="bg-slate-800 font-sans w-full">
       <Head>
@@ -183,14 +152,7 @@ export default function Home() {
           <h2 className="space-x-2 py-6 text-xl font-bold  md:text-4xl  text-mint">
             Other significants projects
           </h2>
-
-          <ul
-            ref={ref}
-            className="
-          flex flex-col md:flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 lg:flex-row lg:w-2/3"
-          >
-            {sideProjectsJSX}
-          </ul>
+          <SideProjects />
         </section>
 
         {/* CONTACT SECTION */}

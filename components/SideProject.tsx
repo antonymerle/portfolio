@@ -1,8 +1,6 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   IconDefinition,
-  faLineChart,
   faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
@@ -28,10 +26,7 @@ const SideProject: React.FC<Props> = ({
         icon={projectIcon}
         className="text-slate-300 pb-4 h-[4rem]"
       />
-      <h3
-        className="text-xl font-bold pb-4 lg:text-3xl text-slate-300 
-              "
-      >
+      <h3 className="text-xl font-bold pb-4 lg:text-3xl text-slate-300">
         {title}
       </h3>
       <p>{description}</p>
