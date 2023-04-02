@@ -36,7 +36,10 @@ const Button: React.FC<Props> = ({ text, bgColor, color, outline, hover }) => {
   };
 
   return (
-    <a href="mailto:antony.merle@outlook.fr">
+    <a
+      href="mailto:antony.merle@outlook.fr"
+      aria-label="Send a mail to Antony Merle"
+    >
       <button
         ref={ref}
         className={`border py-5 px-12 ${buttonConfig.outline} ${buttonConfig.color} 

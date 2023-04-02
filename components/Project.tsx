@@ -102,12 +102,22 @@ const Project: React.FC<IMainProject> = ({
           className={`project-code-live flex justify-center  space-x-2 py-4 ${justifyLookupTable.stackJustification}`}
         >
           <li className="text-slate-300 hover:text-mint">
-            <a href={repoURL} target="_blank" rel="noopener noreferrer">
+            <a
+              href={repoURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Go to the code repository of this project"
+            >
               <FontAwesomeIcon icon={faGithubAlt} style={{ height: "20px" }} />
             </a>
           </li>
           <li className="text-slate-300 hover:text-mint">
-            <a href={liveURL} target="_blank" rel="noopener noreferrer">
+            <a
+              href={liveURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Go to the live website of this project"
+            >
               <FontAwesomeIcon
                 icon={faRightFromBracket}
                 style={{ height: "20px" }}

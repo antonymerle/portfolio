@@ -37,7 +37,7 @@ const Navbar = () => {
       }`}
     >
       <div className="flex w-full items-center justify-between">
-        <a href="#welcome">
+        <a href="#welcome" aria-label="Scroll to the welcome section">
           <div
             className={`w-1/2 md:w-full bg-mint rounded-full md:${gradientConfig.bg}`}
           >
@@ -68,17 +68,29 @@ const Navbar = () => {
           >
             <ol className="flex flex-col justify-center items-center h-full space-y-8 text-2xl text-mint">
               <li>
-                <a href="#about" onClick={() => setIsMenuOpen(false)}>
+                <a
+                  href="#about"
+                  onClick={() => setIsMenuOpen(false)}
+                  aria-label="Scroll to the About section"
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" onClick={() => setIsMenuOpen(false)}>
+                <a
+                  href="#projects"
+                  onClick={() => setIsMenuOpen(false)}
+                  aria-label="Scroll to the projects section"
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+                <a
+                  href="#contact"
+                  onClick={() => setIsMenuOpen(false)}
+                  aria-label="Scroll to the contact section"
+                >
                   Contact
                 </a>
               </li>
@@ -88,6 +100,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMenuOpen(false)}
+                  aria-label="Download Antony Merle's resume"
                 >
                   Resume
                 </a>
@@ -101,19 +114,26 @@ const Navbar = () => {
           className={`hidden md:flex justify-between items-center space-x-6 text-md text-mint`}
         >
           <li className={`flex hover:${gradientConfig.text}`}>
-            <a href="#about">About</a>
+            <a href="#about" aria-label="Scroll to the About section">
+              About
+            </a>
           </li>
           <li className={`flex hover:${gradientConfig.text}`}>
-            <a href="#projects">Projects</a>
+            <a href="#projects" aria-label="Scroll to the projects section">
+              Projects
+            </a>
           </li>
           <li className={`flex hover:${gradientConfig.text}`}>
-            <a href="#contact">Contact</a>
+            <a href="#contact" aria-label="Scroll to the contact section">
+              Contact
+            </a>
           </li>
           <li className={`flex hover:${gradientConfig.text}`}>
             <a
               href="/files/RESUME_MERLE_en.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Download Antony Merle's resume"
             >
               Resume
             </a>

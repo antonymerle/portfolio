@@ -27,7 +27,11 @@ const Footer = () => {
       </h6>
 
       <ul className="flex flex-row space-x-6 md:space-x-10">
-        <a href="https://github.com/antonymerle" target="blank">
+        <a
+          href="https://github.com/antonymerle"
+          target="blank"
+          aria-label="Antony Merle's Github profile"
+        >
           <li className={iconClass}>
             <FontAwesomeIcon icon={faGithubAlt} style={{ height: "33px" }} />
           </li>
@@ -35,22 +39,35 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/antony-merle-25854042/"
           target="blank"
+          aria-label="Antony Merle's LinkedIn profile"
         >
           <li className={iconClass}>
             <FontAwesomeIcon icon={faLinkedinIn} style={{ height: "33px" }} />
           </li>
         </a>{" "}
-        <a href="https://www.instagram.com/antonymerle/" target="blank">
+        <a
+          href="https://www.instagram.com/antonymerle/"
+          target="blank"
+          aria-label="Antony Merle's Instagram profile"
+        >
           <li className={iconClass}>
             <FontAwesomeIcon icon={faInstagram} style={{ height: "33px" }} />
           </li>
         </a>{" "}
-        <a href="https://twitter.com/AntonyMerleDev" target="blank">
+        <a
+          href="https://twitter.com/AntonyMerleDev"
+          target="blank"
+          aria-label="Antony Merle's Twitter profile"
+        >
           <li className={iconClass}>
             <FontAwesomeIcon icon={faTwitter} style={{ height: "33px" }} />
           </li>
         </a>
-        <a href="mailto:antony.merle@gmail.com" target="blank">
+        <a
+          href="mailto:antony.merle@gmail.com"
+          target="blank"
+          aria-label="Send an email to Antony Merle"
+        >
           <li className={iconClass}>
             <FontAwesomeIcon icon={faEnvelope} style={{ height: "33px" }} />
           </li>
