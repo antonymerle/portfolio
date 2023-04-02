@@ -81,7 +81,7 @@ const Project: React.FC<IMainProject> = ({
           {title}
         </h3>
         <p
-          className={`text-center bg-cybGrey rounded-sm text-slate-200 text-sm ${
+          className={`text-center bg-cybGrey rounded-sm text-slate-100 text-sm ${
             justifyLookupTable.descriptionJustification
           } p-4 lg:col-start-${justify === "right" ? "1" : "7"} lg:col-end-${
             justify === "right" ? "6" : "13"
