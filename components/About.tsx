@@ -20,7 +20,7 @@ const About = () => {
           className="w-full flex flex-row justify-center items-center md:justify-start text-slate-700"
         >
           <h2 className="space-x-2  text-xl font-bold pb-6  md:text-4xl">
-            <span className="text-lg text-mint">01.</span>
+            <span className="text-lg">01.</span>
             <span>About me</span>
           </h2>
         </div>
