@@ -5,7 +5,7 @@ import {
   faShieldHalved,
 } from "@fortawesome/free-solid-svg-icons";
 
-import istexUPPA2 from "../public/istex-uppa2.jpg";
+import istexUPPA from "../public/istex-uppa.jpg";
 import kanban from "../public/kanban.jpg";
 import wordle from "../public/wordle.jpg";
 
@@ -30,7 +30,7 @@ export const mainProjects: Array<IMainProject> = [
     description:
       "A search engine frontend to the ISTEX database : explore scientific, technical and medical research through 27 millions articles.",
     projectImage: {
-      imageImport: istexUPPA2,
+      imageImport: istexUPPA,
       width: 800,
       height: 450,
       imageAlt: "istex uppa screencap",
