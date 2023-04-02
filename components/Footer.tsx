@@ -22,9 +22,9 @@ const Footer = () => {
         height={333}
         className="rounded-full md:transition-all md:hover:opacity-90 md:hover:rounded-full md:duration-500 ease-in-out border-4  border-mint"
       />
-      <h6 className="text-2xl font- light">
+      <h4 className="text-2xl font- light">
         Antony Merle, {new Date().getFullYear()}
-      </h6>
+      </h4>
 
       <ul className="flex flex-row space-x-6 md:space-x-10">
         <li>
