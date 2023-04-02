@@ -31,7 +31,7 @@ const About = () => {
         >
           <div id="about-text" className="text-center md:text-left">
             <p className="pb-6">
-              I am a father of three and live in the Basque Country, southwest
+              {`I am a father of three and live in the Basque Country, southwest
               of France. It's a beautiful land and culture that inspire me
               everyday in my work. Since the beginning of my programming journey
               in 2017, I worked as head of IT for the University of Pau's
@@ -42,7 +42,7 @@ const About = () => {
               tasks, helping students with administrative procedures. In 2023, I
               gratuaded at <i>la Capsule</i> bootcamp, worked on board.lease, a
               peer to peer surfoard renting mobile-first website. I am currently
-              open to work.
+              open to work.`}
             </p>
 
             <h3 className="space-x-2  text-lg font-bold pt-16 pb-2  md:text-xl text-slate-700">
