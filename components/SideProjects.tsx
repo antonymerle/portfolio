@@ -37,7 +37,7 @@ const SideProjects = () => {
     <ul
       ref={ref}
       className="
-      flex flex-col md:flex-col w-full h-full md:h-1/3 md:w-2/3 p-4 text-slate-300 lg:flex-row lg:w-2/3"
+      flex flex-col md:flex-col w-full h-full md:h-1/3 md:w-2/3 py-4 xl:px-4 text-slate-300 lg:flex-row lg:w-2/3"
     >
       {sideProjectsJSX}
     </ul>
