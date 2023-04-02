@@ -28,15 +28,7 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center w-full">
         <About />
         <Projects />
-
-        <section
-          id="contact"
-          className="
-          bg-gradient-to-r from-pink-400   to-orange-300 
-          w-full h-screen flex flex-col items-center justify-start px-4"
-        >
-          <Contact />
-        </section>
+        <Contact />
       </main>
       <Footer />
     </div>
