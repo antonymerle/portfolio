@@ -16,7 +16,7 @@ const Header = () => {
         >
           <span className="text-xl text-mint">Hi, my name is </span>
           <span className="text-slate-50">Antony Merle.</span>
-          <span>I build apps for today's Internet.</span>
+          <span>I build apps for today&apos;s Internet.</span>
         </h1>
         <p className="text-xl md:text-2xl">
           I am a fullstack web developer with a passion for crafting intuitive

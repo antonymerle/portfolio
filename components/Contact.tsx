@@ -15,8 +15,8 @@ const Contact = () => {
           secondaryTitle="together"
         />
         <p className="mx-auto text-center text-xl md:text-2xl">
-          I'd love to hear about your opportunities. Let's connect and see how I
-          can contribute.
+          I&apos;d love to hear about your opportunities. Let&apos;s connect and
+          see how I can contribute.
         </p>
       </div>
       <div className="bottom h-2/5">
