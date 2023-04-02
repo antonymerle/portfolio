@@ -28,7 +28,7 @@ const SideProject: React.FC<Props> = ({
           className="text-slate-300 pb-4 h-[4rem]"
         />
       </div>
-      <h3 className="text-center xl:text-left text-xl font-bold pb-4 lg:text-3xl text-slate-300">
+      <h3 className="text-center xl:text-left text-xl font-bold pb-4 lg:text-3xl text-slate-300 truncate">
         {title}
       </h3>
       <p className="text-center xl:text-left">{description}</p>
