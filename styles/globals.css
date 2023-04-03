@@ -99,3 +99,34 @@
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+
+.rotate-in-2-cw-0 {
+  -webkit-animation: rotate-in-2-cw 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-in-2-cw 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0;
+}
+
+.rotate-in-2-cw-1 {
+  -webkit-animation: rotate-in-2-cw 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-in-2-cw 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 200ms;
+}
+
+.rotate-in-2-cw-2 {
+  -webkit-animation: rotate-in-2-cw 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-in-2-cw 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 400ms;
+}
+
+@keyframes rotate-in-2-cw {
+  0% {
+    -webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}

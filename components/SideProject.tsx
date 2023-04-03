@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   IconDefinition,
@@ -11,6 +12,7 @@ interface Props {
   description: string;
   repoURL: string;
   liveURL: string;
+  delayClass: number;
 }
 
 const SideProject: React.FC<Props> = ({
@@ -19,9 +21,39 @@ const SideProject: React.FC<Props> = ({
   description,
   repoURL,
   liveURL,
+  delayClass,
 }) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(`rotate-in-2-cw-${delayClass}`);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      }
+    );
+
+    observer.observe(ref.current as any);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <li className=" lg:text-left grid grid-cols-1 grid-flow-row-dense justify-center w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md">
+    <li
+      ref={ref}
+      className="lg:text-left grid grid-cols-1 grid-flow-row-dense justify-center w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md"
+    >
       <div className="flex justify-center xl:justify-start">
         <FontAwesomeIcon
           icon={projectIcon}
