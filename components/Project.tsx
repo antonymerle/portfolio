@@ -53,8 +53,8 @@ const Project: React.FC<IMainProject> = ({
   return (
     <li
       ref={ref}
-      className={`${justifyLookupTable.absPos} relative w-full h-full py-12 px-6 bg-slate-700 rounded-md
-      lg:opacity-100 lg:bg-transparent lg:grid lg:grid-cols-12 lg:grid-rows-6 lg:gap-2 lg:overflow-hidden`}
+      className={`${justifyLookupTable.absPos} opacity-0 relative w-full h-full py-12 px-6 bg-slate-700 rounded-md
+lg:bg-transparent lg:grid lg:grid-cols-12 lg:grid-rows-6 lg:gap-2 lg:overflow-hidden`}
     >
       <div
         className={`col-span-full row-span-full lg:transition-all lg:hover:scale-105 lg:hover:rounded-sm lg:duration-300 rounded-sm min-w-[200px] lg:opacity-100 lg:col-start-${

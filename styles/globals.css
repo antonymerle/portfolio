@@ -24,9 +24,11 @@
   @keyframes slide-in-ltr {
     from {
       transform: translateX(0);
+      opacity: 0;
     }
     to {
       transform: translateX(-0.5rem);
+      opacity: 1;
     }
   }
 
@@ -40,9 +42,11 @@
   @keyframes slide-in-rtl {
     from {
       transform: translateX(0);
+      opacity: 0;
     }
     to {
       transform: translateX(0.5rem);
+      opacity: 1;
     }
   }
 
@@ -56,11 +60,13 @@
 
 @media (min-width: 1280px) {
   @keyframes slide-in-ltr {
-    from {
+    0% {
       transform: translateX(0);
+      opacity: 0;
     }
-    to {
+    100% {
       transform: translateX(-3rem);
+      opacity: 1;
     }
   }
 
@@ -72,11 +78,13 @@
   }
 
   @keyframes slide-in-rtl {
-    from {
+    0% {
       transform: translateX(0);
+      opacity: 0;
     }
-    to {
+    100% {
       transform: translateX(3rem);
+      opacity: 1;
     }
   }
 
