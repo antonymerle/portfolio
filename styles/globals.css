@@ -22,34 +22,32 @@
 
 @keyframes slide-in-ltr {
   from {
-    transform: translateX(-3rem);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(-3rem);
   }
 }
 
 .animate-slide-in-ltr {
   animation-name: slide-in-ltr;
   animation-duration: 1s;
-  animation-delay: 200ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes slide-in-rtl {
   from {
-    transform: translateX(3rem);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(3rem);
   }
 }
 
 .animate-slide-in-rtl {
   animation-name: slide-in-rtl;
   animation-duration: 1s;
-  animation-delay: 200ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -66,7 +64,6 @@
 .animate-slide-down {
   animation-name: slide-down;
   animation-duration: 1s;
-  animation-delay: 200ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -83,7 +80,6 @@
 .animate-slide-up {
   animation-name: slide-up;
   animation-duration: 1s;
-  animation-delay: 200ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -99,8 +95,7 @@
 
 .animate-scale-up-center {
   animation-name: scale-up-center;
-  animation-duration: 0.4s;
-  animation-delay: 200ms;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
