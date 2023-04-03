@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="flex w-full items-center justify-between">
         <a href="#welcome" aria-label="Scroll to the welcome section">
           <div
-            className={`w-1/2 md:w-full bg-mint rounded-full md:${gradientConfig.bg}`}
+            className={`w-1/2 md:w-full bg-mint md:hover:bg-gradient-to-r hover:from-pink-400 hover:to-orange-300 rounded-full`}
           >
             <Image
               src={logo}
