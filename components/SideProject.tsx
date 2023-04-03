@@ -52,7 +52,7 @@ const SideProject: React.FC<Props> = ({
   return (
     <li
       ref={ref}
-      className="lg:text-left grid grid-cols-1 grid-flow-row-dense justify-center w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md"
+      className="opacity-0 lg:text-left grid grid-cols-1 grid-flow-row-dense justify-center w-full mb-4 bg-slate-700 transition ease-in hover:bg-slate-600 p-12 md:w-full  md:mr-4 rounded-md"
     >
       <div className="flex justify-center xl:justify-start">
         <FontAwesomeIcon
