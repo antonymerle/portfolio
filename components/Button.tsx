@@ -13,12 +13,19 @@ const Button: React.FC<Props> = ({ text, bgColor, color, outline, hover }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-slide-up");
-          observer.unobserve(entry.target);
+      entries.forEach(
+        (entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-slide-up");
+            observer.unobserve(entry.target);
+          }
+        },
+        {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.5,
         }
-      });
+      );
     });
 
     observer.observe(ref.current as any);

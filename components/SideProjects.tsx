@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import SideProject from "./SideProject";
 import { sideProjects } from "../data/projects";
+import { useIntersection } from "react-use";
 
 const sideProjectsJSX = sideProjects.map((project, i) => (
   <SideProject
@@ -17,14 +18,21 @@ const SideProjects = () => {
   const ref = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-scale-up-center");
-          observer.unobserve(entry.target);
-        }
-      });
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-scale-up-center");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      }
+    );
 
     observer.observe(ref.current as any);
 
