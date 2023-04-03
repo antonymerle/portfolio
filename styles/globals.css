@@ -32,7 +32,8 @@
 .animate-slide-in-ltr {
   animation-name: slide-in-ltr;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -48,7 +49,8 @@
 .animate-slide-in-rtl {
   animation-name: slide-in-rtl;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -64,7 +66,8 @@
 .animate-slide-down {
   animation-name: slide-down;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -80,7 +83,8 @@
 .animate-slide-up {
   animation-name: slide-up;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -96,6 +100,7 @@
 .animate-scale-up-center {
   animation-name: scale-up-center;
   animation-duration: 0.4s;
+  animation-delay: 200ms;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
