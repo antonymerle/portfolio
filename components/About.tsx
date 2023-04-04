@@ -16,7 +16,7 @@ const About = () => {
     >
       <div
         id="about-container"
-        className="h-3/5 max-w-[900px] mx-auto px-12 pt-24  bg-slate-100 "
+        className="h-3/5 max-w-[900px] mx-auto px-8 md:px-12 pt-24  bg-slate-100 "
       >
         <div
           id="about-header"
