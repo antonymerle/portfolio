@@ -3,11 +3,14 @@ import Image from "next/image";
 import logo from "../public/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import useTranslation from "next-translate/useTranslation";
 
 const Navbar = () => {
   const [isScrolledUp, setIsScrolledUp] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { t } = useTranslation("navbar");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,7 +76,7 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen(false)}
                   aria-label="Scroll to the About section"
                 >
-                  About
+                  {t("about")}
                 </a>
               </li>
               <li>
@@ -82,7 +85,7 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen(false)}
                   aria-label="Scroll to the projects section"
                 >
-                  Projects
+                  {t("projects")}
                 </a>
               </li>
               <li>
@@ -102,7 +105,7 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen(false)}
                   aria-label="Download Antony Merle's resume"
                 >
-                  Resume
+                  {t("resume")}
                 </a>
               </li>
             </ol>
@@ -115,12 +118,12 @@ const Navbar = () => {
         >
           <li className={`flex hover:${gradientConfig.text}`}>
             <a href="#about" aria-label="Scroll to the About section">
-              About
+              {t("about")}
             </a>
           </li>
           <li className={`flex hover:${gradientConfig.text}`}>
             <a href="#projects" aria-label="Scroll to the projects section">
-              Projects
+              {t("projects")}
             </a>
           </li>
           <li className={`flex hover:${gradientConfig.text}`}>
@@ -130,12 +133,12 @@ const Navbar = () => {
           </li>
           <li className={`flex hover:${gradientConfig.text}`}>
             <a
-              href="/files/RESUME_MERLE_en.pdf"
+              href={t("resume-link")}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Antony Merle's resume"
             >
-              Resume
+              {t("resume")}
             </a>
           </li>
         </ol>

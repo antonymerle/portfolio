@@ -2,10 +2,13 @@ import Image from "next/image";
 import pp from "../public/antony-merle.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import useTranslation from "next-translate/useTranslation";
 
 const plusBullet = <FontAwesomeIcon icon={faPlus} style={{ height: "10px" }} />;
 
 const About = () => {
+  const { t } = useTranslation("about");
+
   return (
     <section
       id="about"
@@ -21,7 +24,7 @@ const About = () => {
         >
           <h2 className="space-x-2  text-xl font-bold pb-6  md:text-4xl">
             <span className="text-lg">01.</span>
-            <span>About me</span>
+            <span>t("title")</span>
           </h2>
         </div>
 
@@ -30,20 +33,7 @@ const About = () => {
           className="flex flex-col container md:h-auto md:grid md:gap-6 md:grid-cols-[3fr_2fr] md:grid-rows-2"
         >
           <div id="about-text" className="text-center md:text-left">
-            <p className="pb-6">
-              I am a father of three and live in the Basque Country, southwest
-              of France. It&apos;s a beautiful land and culture that inspire me
-              everyday in my work. Since the beginning of my programming journey
-              in 2017, I worked as head of IT for the University of Pau&apos;s
-              academic libraries. I specialized in JavaScript and TypeScript to
-              build applications everybody can use simply in their browser, with
-              no installation needed. I built apps that focus on very different
-              topics like providing business intelligence, automating repetitive
-              tasks, helping students with administrative procedures. In 2023, I
-              gratuaded at <i>la Capsule</i> bootcamp, worked on board.lease, a
-              peer to peer surfoard renting mobile-first website. I am currently
-              open to work.
-            </p>
+            <p className="pb-6">t("description")</p>
 
             <h3 className="space-x-2  text-lg font-bold pt-16 pb-2  md:text-xl text-slate-700">
               Stack
