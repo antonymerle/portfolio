@@ -1,7 +1,10 @@
 import CallToAction from "./CallToAction";
 import Button from "./Button";
+import useTranslation from "next-translate/useTranslation";
 
 const Contact = () => {
+  const { t } = useTranslation("contact");
+
   return (
     <section
       id="contact"
@@ -11,17 +14,16 @@ const Contact = () => {
     >
       <div className="flex flex-col justify-end space-y-6 mb-12 h-3/5 max-w-[768px] text-slate-600">
         <CallToAction
-          mainTitle="Let's build something great"
-          secondaryTitle="together"
+          mainTitle={t("main-title")}
+          secondaryTitle={t("secondary-title")}
         />
         <p className="mx-auto text-center text-xl md:text-2xl">
-          I&apos;d love to hear about your opportunities. Let&apos;s connect and
-          see how I can contribute.
+          {t("paragraph")}
         </p>
       </div>
       <div className="bottom h-2/5">
         <Button
-          text="Say hi"
+          text={t("button")}
           bgColor="bg-slate-50"
           color="text-slate-600"
           outline="border-slate-600"
