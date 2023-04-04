@@ -24,7 +24,7 @@ const About = () => {
         >
           <h2 className="space-x-2  text-xl font-bold pb-6  md:text-4xl">
             <span className="text-lg">01.</span>
-            <span>t("title")</span>
+            <span>{t("title")}</span>
           </h2>
         </div>
 
@@ -33,7 +33,7 @@ const About = () => {
           className="flex flex-col container md:h-auto md:grid md:gap-6 md:grid-cols-[3fr_2fr] md:grid-rows-2"
         >
           <div id="about-text" className="text-center md:text-left">
-            <p className="pb-6">t("description")</p>
+            <p className="pb-6">{t("description")}</p>
 
             <h3 className="space-x-2  text-lg font-bold pt-16 pb-2  md:text-xl text-slate-700">
               Stack

@@ -4,7 +4,6 @@ import {
   faWater,
   faShieldHalved,
 } from "@fortawesome/free-solid-svg-icons";
-
 import istexUPPA from "../public/istex-uppa.jpg";
 import kanban from "../public/kanban.jpg";
 import wordle from "../public/wordle.jpg";
@@ -24,11 +23,9 @@ export interface IMainProject {
   justify: string;
 }
 
-export const mainProjects: Array<IMainProject> = [
+export const mainProjects = [
   {
     title: "ISTEX-UPPA",
-    description:
-      "A search engine frontend to the ISTEX database : explore scientific, technical and medical research through 27 millions articles.",
     projectImage: {
       imageImport: istexUPPA,
       width: 800,
@@ -42,8 +39,6 @@ export const mainProjects: Array<IMainProject> = [
   },
   {
     title: "Kanban",
-    description:
-      "A kanban board that let your team manage tasks efficiently by draging and dropping items from one column to another, add comments and more.",
     projectImage: {
       imageImport: kanban,
       width: 800,
@@ -57,8 +52,6 @@ export const mainProjects: Array<IMainProject> = [
   },
   {
     title: "Wordle",
-    description:
-      "Wordle is a popular online word game where the player has to guess a five-letter word in a limited number of attempts.",
     projectImage: {
       imageImport: wordle,
       width: 800,

@@ -1,7 +1,10 @@
 import MainProjects from "./MainProjects";
 import SideProjects from "./SideProjects";
+import useTranslation from "next-translate/useTranslation";
 
 const Projects = () => {
+  const { t } = useTranslation("projects");
+
   return (
     <>
       <section
@@ -20,7 +23,7 @@ const Projects = () => {
           >
             <h2 className="space-x-2 py-6 text-xl font-bold  lg:text-4xl">
               <span className="text-lg text-mint">02.</span>
-              <span>Projects I built</span>
+              <span>{t("main-title")}</span>
             </h2>
           </div>
           <MainProjects />
@@ -47,7 +50,7 @@ const Projects = () => {
         className="w-full h-max flex flex-col items-center justify-center px-4 py-24 bg-slate-800"
       >
         <h2 className="space-x-2 py-6 text-xl font-bold  md:text-4xl  text-mint">
-          Other significants projects
+          {t("secondary-title")}
         </h2>
         <SideProjects />
       </section>

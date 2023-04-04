@@ -1,19 +1,22 @@
 import SideProject from "./SideProject";
 import { sideProjects } from "../data/projects";
-
-const sideProjectsJSX = sideProjects.map((project, i) => (
-  <SideProject
-    projectIcon={project.projectIcon}
-    title={project.title}
-    description={project.description}
-    repoURL={project.repoURL}
-    liveURL={project.liveURL}
-    key={i}
-    delayClass={i}
-  />
-));
+import useTranslation from "next-translate/useTranslation";
 
 const SideProjects = () => {
+  const { t } = useTranslation("projects");
+
+  const sideProjectsJSX = sideProjects.map((project, i) => (
+    <SideProject
+      projectIcon={project.projectIcon}
+      title={project.title}
+      description={t(`side-project${i}-desc`)}
+      repoURL={project.repoURL}
+      liveURL={project.liveURL}
+      key={i}
+      delayClass={i}
+    />
+  ));
+
   return (
     <ul
       className="
