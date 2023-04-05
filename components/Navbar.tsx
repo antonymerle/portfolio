@@ -4,6 +4,7 @@ import logo from "../public/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import useTranslation from "next-translate/useTranslation";
+import LangSwitch from "./LangSwitch";
 
 const Navbar = () => {
   const [isScrolledUp, setIsScrolledUp] = useState(false);
@@ -108,6 +109,9 @@ const Navbar = () => {
                   {t("resume")}
                 </a>
               </li>
+              <li>
+                <LangSwitch />
+              </li>
             </ul>
           </div>
         )}
@@ -140,6 +144,10 @@ const Navbar = () => {
             >
               {t("resume")}
             </a>
+          </li>
+          <li>|</li>
+          <li>
+            <LangSwitch />
           </li>
         </ul>
       </div>
