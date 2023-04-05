@@ -69,7 +69,7 @@ const Navbar = () => {
             className="transition ease-in-out transform scale-75 translate-y-16 delay-150 
            p-6 bg-slate-800 border-2 border-mint fixed top-0 left-56 text-right rounded-md md:hidden"
           >
-            <ol className="flex flex-col justify-center items-center h-full space-y-8 text-2xl text-mint">
+            <ul className="flex flex-col justify-center items-center h-full space-y-8 text-2xl text-mint">
               <li>
                 <a
                   href="#about"
@@ -108,12 +108,12 @@ const Navbar = () => {
                   {t("resume")}
                 </a>
               </li>
-            </ol>
+            </ul>
           </div>
         )}
 
         {/* md Menu */}
-        <ol
+        <ul
           className={`hidden md:flex justify-between items-center space-x-6 text-md text-mint`}
         >
           <li className={`flex hover:${gradientConfig.text}`}>
@@ -141,7 +141,7 @@ const Navbar = () => {
               {t("resume")}
             </a>
           </li>
-        </ol>
+        </ul>
       </div>
     </nav>
   );
