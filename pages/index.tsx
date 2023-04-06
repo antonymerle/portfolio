@@ -5,16 +5,18 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Home() {
+  const { t } = useTranslation("meta");
+  const title = t("title");
+  const content = t("content");
+
   return (
     <div className="bg-slate-800 font-sans w-full">
       <Head>
-        <title>Antony Merle | Fullstack web developer</title>
-        <meta
-          name="description"
-          content="Antony Merle fullstack developer portfolio"
-        />
+        <title>{title}</title>
+        <meta name="description" content={content} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="apple-touch-icon"
