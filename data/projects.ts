@@ -8,6 +8,7 @@ import istexUPPA from "../public/istex-uppa.jpg";
 import kanban from "../public/kanban.jpg";
 import wordle from "../public/wordle.jpg";
 import joliShop from "../public/joliShop.jpg";
+import alatempera from "../public/a-la-tempera.jpg";
 
 export interface IMainProject {
   title: string;
@@ -26,6 +27,20 @@ export interface IMainProject {
 
 export const mainProjects = [
   {
+    title: "A la tempera",
+    projectImage: {
+      imageImport: alatempera,
+      width: 800,
+      height: 450,
+      imageAlt:
+        "a la tempera, vente en ligne de peintures décoratives pour chambre d'enfant",
+    },
+    stack: ["NextJS", "MongoDB", "Stripe"],
+    repoURL: "https://github.com/antonymerle/alatempera",
+    liveURL: "http://www.alatempera.com/",
+    justify: "left",
+  },
+  {
     title: "JoliShop",
     projectImage: {
       imageImport: joliShop,
@@ -36,7 +51,7 @@ export const mainProjects = [
     stack: ["NextJS", "Sanity.io", "Stripe"],
     repoURL: "https://github.com/antonymerle/ecommerce",
     liveURL: "https://jolishop.vercel.app/",
-    justify: "left",
+    justify: "right",
   },
   {
     title: "ISTEX-UPPA",
@@ -49,7 +64,7 @@ export const mainProjects = [
     stack: ["TypeScript", "Angular", "rxjs"],
     repoURL: "https://github.com/antonymerle/istex-uppa",
     liveURL: "https://istex-uppa.herokuapp.com/",
-    justify: "right",
+    justify: "left",
   },
   {
     title: "Kanban",
@@ -62,7 +77,7 @@ export const mainProjects = [
     stack: ["NodeJS", "Express", "Socket.io", "React"],
     repoURL: "https://github.com/antonymerle/kanban-backend",
     liveURL: "https://kanban-frontend.herokuapp.com/",
-    justify: "left",
+    justify: "right",
   },
   {
     title: "Wordle",
@@ -75,7 +90,7 @@ export const mainProjects = [
     stack: ["JavaScript", "HTML", "CSS"],
     repoURL: "https://github.com/antonymerle/wordle",
     liveURL: "https://wordle-bay-one.vercel.app/",
-    justify: "right",
+    justify: "left",
   },
 ];
 

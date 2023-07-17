@@ -1,10 +1,11 @@
 {
   "main-title": "Projets",
   "secondary-title": "Autres projets notables",
-  "main-project0-desc": "Un site ecommerce conçu pour simplifier la vie des commerçants indépendants et développer leur activité.",
-  "main-project1-desc": "Un moteur de recherche pour la base de données ISTEX : explorez 27 millions d'articles issus de la recherche scientifique mondiale.",
-  "main-project2-desc": "Un tableau kanban qui permet à votre équipe de gérer ses tâches efficacement en faisant glisser et déposer des éléments d'une colonne à une autre, ajouter des commentaires et plus encore.",
-  "main-project3-desc": "Wordle est un jeu en ligne populaire dans lequel le joueur doit deviner un mot de cinq lettres en un nombre limité d'essais.",
+  "main-project0-desc": "Une galerie de peintures executées avec la technique ancienne de la tempera. Offez à votre enfant une oeuvre originale pour décorer sa chambre !",
+  "main-project1-desc": "Un site ecommerce conçu pour simplifier la vie des commerçants indépendants et développer leur activité.",
+  "main-project2-desc": "Un moteur de recherche pour la base de données ISTEX : explorez 27 millions d'articles issus de la recherche scientifique mondiale.",
+  "main-project3-desc": "Un tableau kanban qui permet à votre équipe de gérer ses tâches efficacement en faisant glisser et déposer des éléments d'une colonne à une autre, ajouter des commentaires et plus encore.",
+  "main-project4-desc": "Wordle est un jeu en ligne populaire dans lequel le joueur doit deviner un mot de cinq lettres en un nombre limité d'essais.",
   "side-project0-desc": "SISE Analytics est un tableau de bord qui récupère et retraite les données d'effectifs étudiants des universités françaises. Sise Analytics aide les bibliothèques universitaires à mieux cibler leurs acquisitions de ressources électroniques.",
   "side-project1-desc": "Board.lease est un site créé par des surfeurs pour des surfeurs. Louez une planche de surf sur votre prochaine destination de vacances. Local ? Mettez votre board en location ! Board.lease est un MVP académique conçu pour être affiché sur smartphone.",
   "side-project2-desc": "PhishEye est une extension de navigateur (Chrome/Firefox) conçue pour protéger les utilisateurs du webmail de l'Université de Pau contre le phishing. L'extension détecte les liens malveillants, les nettoie et affiche un message informatif à l'utilisateur."
