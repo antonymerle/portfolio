@@ -1,21 +1,18 @@
 import { useCallback } from "react";
-import { Container, Engine } from "tsparticles-engine";
+// import { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { loadLinksPreset } from "tsparticles-preset-links";
 
 const Graph = () => {
-  const particlesInit = useCallback(async (engine: Engine) => {
+  const particlesInit = useCallback(async (engine: any) => {
     await loadLinksPreset(engine);
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      container?.canvas;
-    },
-    []
-  );
+  const particlesLoaded = useCallback(async (container: any) => {
+    container?.canvas;
+  }, []);
 
   return (
     <Particles
