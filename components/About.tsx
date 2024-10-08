@@ -3,6 +3,7 @@ import pp from "../public/antony-merle.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import useTranslation from "next-translate/useTranslation";
+import Trans from "next-translate/Trans";
 
 const plusBullet = <FontAwesomeIcon icon={faPlus} style={{ height: "10px" }} />;
 
@@ -16,7 +17,7 @@ const About = () => {
     >
       <div
         id="about-container"
-        className="h-3/5 max-w-[900px] mx-auto px-8 md:px-12 pt-24  bg-slate-100 "
+        className="h-3/5 max-w-[900px] mx-auto px-8 md:px-12 pt-24 bg-slate-100 "
       >
         <div
           id="about-header"
@@ -33,7 +34,20 @@ const About = () => {
           className="flex flex-col container md:h-auto md:grid md:gap-6 md:grid-cols-[3fr_2fr] md:grid-rows-2"
         >
           <div id="about-text" className="text-center md:text-left">
-            <p className="pb-6">{t("description")}</p>
+            <p className="pb-6">
+              <Trans
+                i18nKey="about:description"
+                components={[
+                  <a
+                    href="https://hyproom.com"
+                    key="0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-slate-700 hover:underline"
+                  />,
+                ]}
+              />
+            </p>
 
             <h3 className="space-x-2  text-lg font-bold pt-16 pb-2  md:text-xl text-slate-700">
               Stack
@@ -47,22 +61,16 @@ const About = () => {
                 <span className="mr-2">{plusBullet}</span>TypeScript
               </li>
               <li className="flex">
-                <span className="mr-2">{plusBullet}</span>NodeJS
-              </li>
-              <li className="flex">
-                <span className="mr-2">{plusBullet}</span>Express
+                <span className="mr-2">{plusBullet}</span>React
               </li>
               <li className="flex">
                 <span className="mr-2">{plusBullet}</span>NextJS
               </li>
               <li className="flex">
-                <span className="mr-2">{plusBullet}</span>React Native
+                <span className="mr-2">{plusBullet}</span>Go
               </li>
               <li className="flex">
-                <span className="mr-2">{plusBullet}</span>MongoDB
-              </li>
-              <li className="flex">
-                <span className="mr-2">{plusBullet}</span>mySQL
+                <span className="mr-2">{plusBullet}</span>SQL / NoSQL
               </li>
             </ul>
           </div>
