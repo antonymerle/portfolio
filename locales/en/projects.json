@@ -1,11 +1,12 @@
 {
   "main-title": "Projects I built",
   "secondary-title": "Other significants projects",
-  "main-project0-desc": "A fine art gallery that is all about making children rooms awesome again.",
-  "main-project1-desc": "An ecommerce platform carefuly crafted for small businesses and home sellers. Shop with a purpose and experience the joy of shopping small !",
-  "main-project2-desc": "A search engine frontend to the ISTEX database : explore scientific, technical and medical research through 27 millions articles.",
-  "main-project3-desc": "A kanban board that let your team manage tasks efficiently by draging and dropping items from one column to another, add comments and more.",
-  "main-project4-desc": "Wordle is a popular online word game where the player has to guess a five-letter word in a limited number of attempts.",
+  "main-project6-desc": "Hyproom is a workspace booking app that helps you find the perfect spot to work, meet or learn.",
+  "main-project5-desc": "A fine art gallery that is all about making children rooms awesome.",
+  "main-project4-desc": "An ecommerce platform carefuly crafted for small businesses and home sellers. Shop with a purpose and experience the joy of shopping small !",
+  "main-project3-desc": "A search engine frontend to the ISTEX database : explore scientific, technical and medical research through 27 millions articles.",
+  "main-project2-desc": "A kanban board that let your team manage tasks efficiently by draging and dropping items from one column to another, add comments and more.",
+  "main-project1-desc": "Wordle is a popular online word game where the player has to guess a five-letter word in a limited number of attempts.",
   "side-project0-desc": "SISE Analytics is a dashboard that fetches Full-Time-Equivalent (FTE) of french universities, process the data and export it on a SpreadSheet. Sise Analytics helps academic libraries to manage their electronic resources acquisitions based on that FTE data.",
   "side-project1-desc": "Board.lease is made by surfers for surfers. Rent your board on your future holiday spot. If you're a local, you can put your surfboard to rent, make a little money and help a fellow surfer ! Board.lease is an academic MVP designed to be displayed on mobile phones.",
   "side-project2-desc": "PhishEye is a web browser extension designed to protect Université de Pau webmail users from phishing. Attacks being often predictables, the extension is able to detect malicious links, sanitize them and display an informative message to the user."
