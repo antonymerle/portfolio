@@ -9,6 +9,7 @@ import kanban from "../public/kanban.jpg";
 import wordle from "../public/wordle.jpg";
 import joliShop from "../public/joliShop.jpg";
 import alatempera from "../public/a-la-tempera.jpg";
+import hyproom from "../public/hyproom.jpg";
 
 export interface IMainProject {
   title: string;
@@ -27,6 +28,19 @@ export interface IMainProject {
 
 export const mainProjects = [
   {
+    title: "Hyproom",
+    projectImage: {
+      imageImport: hyproom,
+      width: 800,
+      height: 450,
+      imageAlt: "hyproom image",
+    },
+    stack: ["NextJS", "Golang", "mySQL"],
+    repoURL: "https://github.com/antonymerle/hyproom-frontend",
+    liveURL: "http://www.hyproom.com/",
+    justify: "left",
+  },
+  {
     title: "A la tempera",
     projectImage: {
       imageImport: alatempera,
@@ -38,7 +52,7 @@ export const mainProjects = [
     stack: ["NextJS", "MongoDB", "Stripe"],
     repoURL: "https://github.com/antonymerle/alatempera",
     liveURL: "http://www.alatempera.com/",
-    justify: "left",
+    justify: "right",
   },
   {
     title: "JoliShop",
@@ -51,7 +65,7 @@ export const mainProjects = [
     stack: ["NextJS", "Sanity.io", "Stripe"],
     repoURL: "https://github.com/antonymerle/ecommerce",
     liveURL: "https://jolishop.vercel.app/",
-    justify: "right",
+    justify: "left",
   },
   {
     title: "ISTEX-UPPA",
@@ -64,7 +78,7 @@ export const mainProjects = [
     stack: ["TypeScript", "Angular", "rxjs"],
     repoURL: "https://github.com/antonymerle/istex-uppa",
     liveURL: "https://istex-uppa.herokuapp.com/",
-    justify: "left",
+    justify: "right",
   },
   {
     title: "Kanban",
@@ -77,7 +91,7 @@ export const mainProjects = [
     stack: ["NodeJS", "Express", "Socket.io", "React"],
     repoURL: "https://github.com/antonymerle/kanban-backend",
     liveURL: "https://kanban-frontend.herokuapp.com/",
-    justify: "right",
+    justify: "left",
   },
   {
     title: "Wordle",
@@ -90,7 +104,7 @@ export const mainProjects = [
     stack: ["JavaScript", "HTML", "CSS"],
     repoURL: "https://github.com/antonymerle/wordle",
     liveURL: "https://wordle-bay-one.vercel.app/",
-    justify: "left",
+    justify: "right",
   },
 ];
 
