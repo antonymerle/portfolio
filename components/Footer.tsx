@@ -1,7 +1,6 @@
 import Image from "next/image";
 import logoFullSize from "../public/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import useTranslation from "next-translate/useTranslation";
 
 const iconClass =
   "md:border-2 md:border-slate-300 p-2 md:p-6 md:rounded-full md:transition-colors md:duration-300 md:ease-in md:hover:bg-mint md:hover:text-slate-700";
@@ -58,6 +57,7 @@ const social = [
 ];
 
 const Footer = () => {
+  const { t } = useTranslation("footer");
   return (
     <footer className="flex flex-col space-y-12 justify-center items-center h-[777px] text-slate-300">
       <Image
@@ -68,7 +68,7 @@ const Footer = () => {
         className="rounded-full md:transition-all md:hover:opacity-90 md:hover:rounded-full md:duration-500 ease-in-out border-4  border-mint"
       />
       <h3 className="flex items-center text-base md:text-lg font-light tracking-widest">
-        Réalisé par Antony Merle, {new Date().getFullYear()}
+        {t("colophon")}, {new Date().getFullYear()}
         <a
           href="https://github.com/antonymerle/portfolio"
           target="_blank"
