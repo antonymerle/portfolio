@@ -13,11 +13,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-fit md:h-screen w-full py-12 px-6 bg-slate-50 z-10"
+      className="h-fit min-h-screen md:h-screen w-full py-12 px-6 bg-slate-50 z-10"
     >
       <div
         id="about-container"
-        className="h-3/5 max-w-[900px] mx-auto px-8 md:px-12 pt-24 bg-slate-100 "
+        className="h-[80%] max-w-[900px] mx-auto px-8 md:px-12 pt-24 bg-slate-100 "
       >
         <div
           id="about-header"
