@@ -5,10 +5,6 @@ import useTranslation from "next-translate/useTranslation";
 const MainProjects = () => {
   const { t } = useTranslation("projects");
 
-  console.log("len mainProjects", mainProjects.length);
-  mainProjects.forEach((project, i) => {
-    console.log("project", i, project?.title);
-  });
   const mainProjectsJSX = mainProjects.map((project, i) => {
     return (
       project && (
