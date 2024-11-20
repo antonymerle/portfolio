@@ -77,7 +77,7 @@ export const mainProjects = [
     },
     stack: ["TypeScript", "Angular", "rxjs"],
     repoURL: "https://github.com/antonymerle/istex-uppa",
-    liveURL: "https://istex-uppa.herokuapp.com/",
+    liveURL: "https://istex-uppa.vercel.app/",
     justify: "right",
   },
   {
@@ -90,7 +90,7 @@ export const mainProjects = [
     },
     stack: ["NodeJS", "Express", "Socket.io", "React"],
     repoURL: "https://github.com/antonymerle/kanban-backend",
-    liveURL: "https://kanban-frontend.herokuapp.com/",
+    liveURL: "https://kanban-frontend-nine.vercel.app/",
     justify: "left",
   },
   {
@@ -115,7 +115,7 @@ export const sideProjects = [
     description:
       "SISE Analytics is a dashboard that fetches Full-Time-Equivalent (FTE) of french universities, process the data and export it on a SpreadSheet. Sise Analytics helps academic libraries to manage their electronic resources acquisitions based on that FTE data.",
     repoURL: "https://git.univ-pau.fr/amerle001/sise-analytics",
-    liveURL: "https://stats-sise.herokuapp.com/",
+    liveURL: "https://sise-analytics.vercel.app/",
   },
   {
     projectIcon: faWater,
